@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "types": ["node"]
+  },
+  "exclude": ["src/**/*.spec.tsx", "src/**/*.spec.ts"],
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*"]
+}

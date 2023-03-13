@@ -1,0 +1,12 @@
+{
+  "app": {
+    "description": "DESCRIPCIÓN APP",
+    "footer": {
+      "made-by": "Hecho con ❤️ por <1>Josan</1>"
+    },
+    "i18n": {
+      "change-language": "Selecciona idioma"
+    },
+    "title": "TÍTULO APP"
+  }
+}

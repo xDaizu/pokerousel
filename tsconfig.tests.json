@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsxdev",
+    "noEmit": true,
+    "types": ["node", "mocha"]
+  },
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*", "./*.tsx?"]
+}
