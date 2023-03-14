@@ -1,20 +1,27 @@
 [
     {
         "name": "Danny",
-        "theme": "Boludo",
+        "title": "Boludo",
+        "theme": "pokemon esfericos",
         "team": [
             "Voltorb",
-            "Jigglypuff"
+            "Jigglypuff",
+            "Marill",
+            "Spheal",
+            "Darumaka",
+            "Gastly"
         ],
         "spriteUrl": "danny.png"
     },
     {
         "name": "Lolocha",
-        "theme": "Niña rata",
+        "title": "Niña rata",
+        "theme": "pokemon roedor",
         "team": [
+            "Minccino",
             "Emolga",
             "Pikachu"
         ],
-        "spriteUrl": "lolocha.png"
+        "spriteUrl": "lolocha.jpg"
     }
 ]

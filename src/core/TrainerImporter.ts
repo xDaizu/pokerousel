@@ -4,6 +4,7 @@ import {findByName} from "./Pokedex";
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
   name: string
+  title: string
   theme: string
   spriteUrl: string
   team: string[]
@@ -21,6 +22,7 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
   return {
     name: trainerJson.name,
     spriteUrl: trainerJson.spriteUrl,
+    title: trainerJson.title,
     theme: trainerJson.theme,
     team: trainerJson.team.map(importPokemon)
   }

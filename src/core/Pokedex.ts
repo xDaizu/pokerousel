@@ -12,7 +12,7 @@ export function findByName(name: string): Pokemon {
 
   const pokemonDexData = pokedexData.find(pokemon => pokemon.name.english === name)
   if (pokemonDexData === undefined) {
-    throw 'pokemon not found'
+    throw `pokemon ${name} not found`
   }
   return {
     name: pokemonDexData.name.english,

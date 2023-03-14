@@ -1,15 +1,87 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
-const COLOR_PRIMARY = '#077BBC'
-const COLOR_SECONDARY = '#021B27'
-const COLOR_SURFACE = '#FAFDFF'
+const COLOR_PRIMARY = '#077BBC';
+const COLOR_SECONDARY = '#021B27';
+const COLOR_SURFACE = '#FAFDFF';
+
+const COLOR_BUG_TYPE_DEFAULT = '#A8B820';
+const COLOR_BUG_TYPE_DARK = '#6D7815';
+const COLOR_BUG_TYPE_LIGHT = '#C6D16E';
+
+const COLOR_DARK_TYPE_DEFAULT = '#705848';
+const COLOR_DARK_TYPE_DARK = '#49392F';
+const COLOR_DARK_TYPE_LIGHT = '#A29288';
+
+const COLOR_DRAGON_TYPE_DEFAULT = '#7038F8';
+const COLOR_DRAGON_TYPE_DARK = '#4924A1';
+const COLOR_DRAGON_TYPE_LIGHT = '#A27DFA';
+
+const COLOR_ELECTRIC_TYPE_DEFAULT = '#F8D030';
+const COLOR_ELECTRIC_TYPE_DARK = '#A1871F';
+const COLOR_ELECTRIC_TYPE_LIGHT = '#FAE078';
+
+const COLOR_FAIRY_TYPE_DEFAULT = '#EE99AC';
+const COLOR_FAIRY_TYPE_DARK = '#9B6470';
+const COLOR_FAIRY_TYPE_LIGHT = '#F4BDC9';
+
+const COLOR_FIGHTING_TYPE_DEFAULT = '#C03028';
+const COLOR_FIGHTING_TYPE_DARK = '#7D1F1A';
+const COLOR_FIGHTING_TYPE_LIGHT = '#D67873';
+
+const COLOR_FIRE_TYPE_DEFAULT = '#F08030';
+const COLOR_FIRE_TYPE_DARK = '#9C531F';
+const COLOR_FIRE_TYPE_LIGHT = '#F5AC78';
+
+const COLOR_FLYING_TYPE_DEFAULT = '#A890F0';
+const COLOR_FLYING_TYPE_DARK = '#6D5E9C';
+const COLOR_FLYING_TYPE_LIGHT = '#C6B7F5';
+
+const COLOR_GHOST_TYPE_DEFAULT = '#705898';
+const COLOR_GHOST_TYPE_DARK = '#493963';
+const COLOR_GHOST_TYPE_LIGHT = '#A292BC';
+
+const COLOR_GRASS_TYPE_DEFAULT = '#78C850';
+const COLOR_GRASS_TYPE_DARK = '#4E8234';
+const COLOR_GRASS_TYPE_LIGHT = '#A7DB8D';
+
+const COLOR_GROUND_TYPE_DEFAULT = '#E0C068';
+const COLOR_GROUND_TYPE_DARK = '#927D44';
+const COLOR_GROUND_TYPE_LIGHT = '#EBD69D';
+
+const COLOR_ICE_TYPE_DEFAULT = '#98D8D8';
+const COLOR_ICE_TYPE_DARK = '#638D8D';
+const COLOR_ICE_TYPE_LIGHT = '#BCE6E6';
+
+const COLOR_NORMAL_TYPE_DEFAULT = '#A8A878';
+const COLOR_NORMAL_TYPE_DARK = '#6D6D4E';
+const COLOR_NORMAL_TYPE_LIGHT = '#C6C6A7';
+
+const COLOR_POISON_TYPE_DEFAULT = '#A040A0';
+const COLOR_POISON_TYPE_DARK = '#682A68';
+const COLOR_POISON_TYPE_LIGHT = '#C183C1';
+
+const COLOR_PSYCHIC_TYPE_DEFAULT = '#F85888';
+const COLOR_PSYCHIC_TYPE_DARK = '#A13959';
+const COLOR_PSYCHIC_TYPE_LIGHT = '#FA92B2';
+
+const COLOR_ROCK_TYPE_DEFAULT = '#B8A038';
+const COLOR_ROCK_TYPE_DARK = '#786824';
+const COLOR_ROCK_TYPE_LIGHT = '#D1C17D';
+
+const COLOR_STEEL_TYPE_DEFAULT = '#B8B8D0';
+const COLOR_STEEL_TYPE_DARK = '#787887';
+const COLOR_STEEL_TYPE_LIGHT = '#D1D1E0';
+
+const COLOR_WATER_TYPE_DEFAULT = '#6890F0';
+const COLOR_WATER_TYPE_DARK = '#445E9C';
+const COLOR_WATER_TYPE_LIGHT = '#9DB7F5';
 
 module.exports = {
   content: ['./src/**/*.{html,tsx}'],
   plugins: [
     require('@tailwindcss/forms'),
-    plugin(function sentenceCase({ addUtilities }) {
+    plugin(function sentenceCase({addUtilities}) {
       addUtilities({
         '.sentence-case': {
           textTransform: 'lowercase',
@@ -17,7 +89,7 @@ module.exports = {
         '.sentence-case::first-letter': {
           textTransform: 'uppercase',
         },
-      })
+      });
     }),
     plugin(elevationShadowPlugin),
   ],
@@ -33,6 +105,97 @@ module.exports = {
         surface: {
           DEFAULT: COLOR_SURFACE,
         },
+        'type-bug': {
+          DEFAULT: COLOR_BUG_TYPE_DEFAULT,
+          light: COLOR_BUG_TYPE_LIGHT,
+          dark: COLOR_BUG_TYPE_DARK,
+        },
+        'type-dragon': {
+          DEFAULT: COLOR_DRAGON_TYPE_DEFAULT,
+          light: COLOR_DRAGON_TYPE_LIGHT,
+          dark: COLOR_DRAGON_TYPE_DARK,
+        },
+        'type-dark': {
+          DEFAULT: COLOR_DARK_TYPE_DEFAULT,
+          light: COLOR_DARK_TYPE_LIGHT,
+          dark: COLOR_DARK_TYPE_DARK,
+        },
+        'type-electric': {
+          DEFAULT: COLOR_ELECTRIC_TYPE_DEFAULT,
+          light: COLOR_ELECTRIC_TYPE_LIGHT,
+          dark: COLOR_ELECTRIC_TYPE_DARK,
+        },
+        'type-fairy': {
+          DEFAULT: COLOR_FAIRY_TYPE_DEFAULT,
+          light: COLOR_FAIRY_TYPE_LIGHT,
+          dark: COLOR_FAIRY_TYPE_DARK,
+        },
+        'type-fighting': {
+          DEFAULT: COLOR_FIGHTING_TYPE_DEFAULT,
+          light: COLOR_FIGHTING_TYPE_LIGHT,
+          dark: COLOR_FIGHTING_TYPE_DARK,
+        },
+        'type-fire': {
+          DEFAULT: COLOR_FIRE_TYPE_DEFAULT,
+          light: COLOR_FIRE_TYPE_LIGHT,
+          dark: COLOR_FIRE_TYPE_DARK,
+        },
+        'type-flying': {
+          DEFAULT: COLOR_FLYING_TYPE_DEFAULT,
+          light: COLOR_FLYING_TYPE_LIGHT,
+          dark: COLOR_FLYING_TYPE_DARK,
+        },
+        'type-ghost': {
+          DEFAULT: COLOR_GHOST_TYPE_DEFAULT,
+          light: COLOR_GHOST_TYPE_LIGHT,
+          dark: COLOR_GHOST_TYPE_DARK,
+        },
+        'type-grass': {
+          DEFAULT: COLOR_GRASS_TYPE_DEFAULT,
+          light: COLOR_GRASS_TYPE_LIGHT,
+          dark: COLOR_GRASS_TYPE_DARK,
+        },
+        'type-ground': {
+          DEFAULT: COLOR_GROUND_TYPE_DEFAULT,
+          light: COLOR_GROUND_TYPE_LIGHT,
+          dark: COLOR_GROUND_TYPE_DARK,
+        },
+        'type-ice': {
+          DEFAULT: COLOR_ICE_TYPE_DEFAULT,
+          light: COLOR_ICE_TYPE_LIGHT,
+          dark: COLOR_ICE_TYPE_DARK,
+        },
+        'type-normal': {
+          DEFAULT: COLOR_NORMAL_TYPE_DEFAULT,
+          light: COLOR_NORMAL_TYPE_LIGHT,
+          dark: COLOR_NORMAL_TYPE_DARK,
+        },
+        'type-poison': {
+          DEFAULT: COLOR_POISON_TYPE_DEFAULT,
+          light: COLOR_POISON_TYPE_LIGHT,
+          dark: COLOR_POISON_TYPE_DARK,
+        },
+        'type-psychic': {
+          DEFAULT: COLOR_PSYCHIC_TYPE_DEFAULT,
+          light: COLOR_PSYCHIC_TYPE_LIGHT,
+          dark: COLOR_PSYCHIC_TYPE_DARK,
+        },
+        'type-rock': {
+          DEFAULT: COLOR_ROCK_TYPE_DEFAULT,
+          light: COLOR_ROCK_TYPE_LIGHT,
+          dark: COLOR_ROCK_TYPE_DARK,
+        },
+        'type-steel': {
+          DEFAULT: COLOR_STEEL_TYPE_DEFAULT,
+          light: COLOR_STEEL_TYPE_LIGHT,
+          dark: COLOR_STEEL_TYPE_DARK,
+        },
+        'type-water': {
+          DEFAULT: COLOR_WATER_TYPE_DEFAULT,
+          light: COLOR_WATER_TYPE_LIGHT,
+          dark: COLOR_WATER_TYPE_DARK,
+        },
+
       },
       fontFamily: {
         display: [
@@ -82,9 +245,9 @@ module.exports = {
       },
     },
   },
-}
+};
 
-function elevationShadowPlugin({ addBase }) {
+function elevationShadowPlugin({addBase}) {
   const elevationValues = [
     {
       ambient: '0px 0px 0px 0px',
@@ -236,18 +399,18 @@ function elevationShadowPlugin({ addBase }) {
       penumbra: '0px 24px 38px 3px',
       umbra: '0px 11px 15px -7px',
     },
-  ]
+  ];
 
   const elevationOpacities = {
     ambient: 0.12,
     penumbra: 0.14,
     umbra: 0.2,
-  }
+  };
 
-  const shadowColor = [0, 0, 0]
+  const shadowColor = [0, 0, 0];
 
-  const elevationStyles = {}
-  elevationValues.forEach(({ ambient, elevation, penumbra, umbra }) => {
+  const elevationStyles = {};
+  elevationValues.forEach(({ambient, elevation, penumbra, umbra}) => {
     elevationStyles[`.elevation-dp${elevation}`] = {
       boxShadow: `${umbra} rgba(${shadowColor.join(',')}, ${
         elevationOpacities.umbra
@@ -256,8 +419,8 @@ function elevationShadowPlugin({ addBase }) {
       }), ${ambient} rgba(${shadowColor.join(',')}, ${
         elevationOpacities.ambient
       })`,
-    }
-  }, {})
+    };
+  }, {});
 
-  addBase(elevationStyles)
+  addBase(elevationStyles);
 }

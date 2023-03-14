@@ -2,11 +2,11 @@
   "app": {
     "description": "DESCRIPCIÓN APP",
     "footer": {
-      "made-by": "Hecho con ❤️ por <1>Josan</1>"
+      "made-by": "Hecho con ❤️ por <1>Josan</1> y Danny"
     },
     "i18n": {
       "change-language": "Selecciona idioma"
     },
-    "title": "TÍTULO APP"
+    "title": "Pokérousel"
   }
 }
