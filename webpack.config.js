@@ -1,5 +1,5 @@
 const path = require('path')
-// const CopyPlugin = require('copy-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -176,12 +176,11 @@ module.exports = {
     //   mode: 'webapp',
     //   prefix: 'static/',
     // }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     { from: 'src/.nojekyll' },
-    //     { from: 'src/static/', to: 'static/' },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/static/', to: 'static/' },
+      ],
+    }),
   ],
   resolve: {
     extensions: ['.ts', '.js', '.tsx', '.jsx', '.json', '.mjs', '.wasm'],
