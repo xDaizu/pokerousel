@@ -1,4 +1,5 @@
 import data from '../../data/trainer_data.json'
+import {findByName} from "./Pokedex";
 
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
@@ -26,12 +27,5 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
 }
 
 function importPokemon(pokemonName: string): Pokemon {
-  const pokedexNumber = 255
-  return {
-    name: pokemonName,
-    pokedexNumber,
-    type1: 'Fire',
-    type2: undefined,
-    spriteUrl: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokedexNumber}.png`
-  }
+  return findByName(pokemonName);
 }

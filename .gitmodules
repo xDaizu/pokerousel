@@ -1,0 +1,3 @@
+[submodule "src/static/pokedex"]
+	path = src/static/pokedex
+	url = git@github.com:xDaizu/pokemon.json.git
