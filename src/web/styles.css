@@ -2,39 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Pokemon GB";
+    src: url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.eot");
+    src: url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/831e1f4da157d96bc996f8c9f5f1e578.svg#Pokemon GB") format("svg");
+}
+
 @layer base {
-  html,
-  body {
-    @apply bg-surface font-normal font-sans text-base;
-    @apply selection:bg-secondary selection:text-surface;
-  }
+    html,
+    body {
+        @apply bg-surface font-normal font-sans text-base;
+        @apply selection:bg-secondary selection:text-surface;
+    }
 
-  a {
-    @apply font-semibold text-sky-900 hover:underline;
-    @apply focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-80 focus:ring-offset-surface focus:ring-offset-2;
-  }
+    a {
+        @apply font-semibold text-sky-900 hover:underline;
+        @apply focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-80 focus:ring-offset-surface focus:ring-offset-2;
+    }
 
-  .content-area {
-    height: calc(100vh - theme('spacing.14'));
-  }
+    .content-area {
+        height: calc(100vh - theme('spacing.14'));
+    }
 
-  .ringed-focus {
-    @apply focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-80 focus:ring-offset-surface;
-  }
+    .ringed-focus {
+        @apply focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-80 focus:ring-offset-surface;
+    }
 
-  .focusable,
-  .focusable-wrapper {
-    @apply focus:outline-none focus:ring-0;
-  }
-  :focus > .focusable {
-    @apply ring;
-  }
+    .focusable,
+    .focusable-wrapper {
+        @apply focus:outline-none focus:ring-0;
+    }
 
-  a {
-    @apply ringed-focus focus:ring-offset-2;
-  }
+    :focus > .focusable {
+        @apply ring;
+    }
 
-  .small-caps {
-    font-variant: small-caps;
-  }
+    a {
+        @apply ringed-focus focus:ring-offset-2;
+    }
+
+    .small-caps {
+        font-variant: small-caps;
+    }
 }

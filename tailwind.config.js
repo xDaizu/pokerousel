@@ -40,6 +40,10 @@ module.exports = {
           ...defaultTheme.fontFamily.sans,
           '"Noto Sans Symbols 2"',
         ],
+        retro: [
+          '"Pokemon GB"',
+          ...defaultTheme.fontFamily.mono,
+        ],
         mono: [
           '"Fira Mono"',
           ...defaultTheme.fontFamily.mono,
