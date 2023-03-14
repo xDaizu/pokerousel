@@ -4,13 +4,14 @@ interface TrainerCardProps {
   data: Trainer
 }
 
+const DEFAULT_TRAINER_IMAGE = 'unknown.png'
 
 export function TrainerCard({data}: TrainerCardProps): ReactElement {
 
 
   return <div className="bg-zinc-800 max-h-60 h-60 flex border-4 border-red-600 p-2 max-w-xl">
     <div className={"w-44 flex justify-items-center overflow-hidden no-flex"}>
-      <img className={'h-full max-h-full object-cover'} src={`static/trainer/${data.spriteUrl}`}></img>
+      <img className={'h-full max-h-full object-cover'} src={`static/trainer/${data.spriteUrl ?? DEFAULT_TRAINER_IMAGE}`}></img>
     </div>
     <div className={'pt-4 h-full max-h-full flex-1 flex flex-col'}>
       <div className="w-full no-flex">

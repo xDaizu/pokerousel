@@ -3,7 +3,7 @@ import {useTranslation} from 'react-i18next'
 import Footer from './Footer'
 import './styles.css'
 import {importTrainers} from "../core/TrainerImporter";
-import {TrainerCard} from "./TrainerCard";
+import {Carousel} from "./Carousel";
 
 const trainers = importTrainers()
 
@@ -17,7 +17,7 @@ export default function Main(): ReactElement {
         <h1 className="text-5xl text-center font-display font-light mb-6 mt-10">
           {t('app.title')}
         </h1>
-        {trainers.map((trainer:Trainer, index) => <div key={index}><TrainerCard data={trainer} /><br/></div>)}
+        <Carousel data={trainers}/>
       </main>
       <Footer />
     </div>

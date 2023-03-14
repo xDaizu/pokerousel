@@ -3,6 +3,7 @@
         "name": "Danny",
         "title": "Boludo",
         "theme": "pokemon esfericos",
+        "isSubscriber": true,
         "team": [
             "Voltorb",
             "Jigglypuff",
@@ -17,11 +18,38 @@
         "name": "Lolocha",
         "title": "Niña rata",
         "theme": "pokemon roedor",
+        "isSubscriber": true,
         "team": [
             "Minccino",
             "Emolga",
             "Pikachu"
         ],
         "spriteUrl": "lolocha.jpg"
+    },
+    {
+        "name": "Arqueólogo",
+        "title": "Medusa",
+        "theme": "pokemon prehistóricos",
+        "team": [
+            "Torterra",
+            "Aerodactyl",
+            "Kabutops"
+        ]
+    },
+    {
+        "name": "Juancito",
+        "title": "Amante de lo verde",
+        "theme": "pokemon verdes",
+        "team": [
+            "Treecko"
+        ]
+    },
+    {
+        "name": "Julio",
+        "title": "Jardinero",
+        "theme": "pokemon plantitas",
+        "team": [
+            "Bulbasaur"
+        ]
     }
 ]
