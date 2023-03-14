@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Danny",
+        "theme": "Boludo",
+        "team": [
+            "Voltorb",
+            "Jigglypuff"
+        ],
+        "spriteUrl": "danny.png"
+    },
+    {
+        "name": "Lolocha",
+        "theme": "Niña rata",
+        "team": [
+            "Emolga",
+            "Pikachu"
+        ],
+        "spriteUrl": "lolocha.png"
+    }
+]

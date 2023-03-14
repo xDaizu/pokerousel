@@ -46,3 +46,4 @@ node_modules/
 /src/i18n/compiled-translations
 
 .vscode
+.idea
