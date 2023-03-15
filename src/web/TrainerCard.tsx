@@ -25,9 +25,16 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
           <ul className="grid grid-cols-3 grid-rows-2 h-full max-h-full w-full place-content-around">
             {data.team.map((pokemon: Pokemon, index) =>
               <li key={`${data.name}-pokemon-${index}`} className={`${index == 0 ? '' : 'p-2'} flex justify-center content-center items-stretch`}>
-                <div className={`overflow-hidden rounded-full bg-${pokemon.type1.toLowerCase()}`}>
+                <div className={`overflow-hidden p-1 pb-2 rounded-full bg-type-${pokemon.type1.toLowerCase()}-dark drop-shadow-xl`}>
                   <img
-                    className={`w-full h-full object-cover bg-type-${pokemon.type1.toLowerCase()}-light`}
+                    className={`w-full h-full object-cover rounded-full 
+                    ${pokemon.type2 === undefined 
+                      ? `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${pokemon.type1.toLowerCase()}-dark via-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()}-darko`
+                      : `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()} via-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()}-dark`
+                    }
+                    `}
+                    // alternative for plain double color
+                    // style={{background: 'linear-gradient(110deg, #6890F0 60%, #F4BDC9 60%)'}}
                     src={`static/pokedex/sprites/${pokemon.spriteUrl}`}
                   />
                 </div>
