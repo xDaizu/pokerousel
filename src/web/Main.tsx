@@ -17,7 +17,7 @@ export default function Main(): ReactElement {
         <h1 className="text-5xl text-center font-display font-light mb-6 mt-10">
           {t('app.title')}
         </h1>
-        <Carousel data={trainers}/>
+        <Carousel data={trainers} transitionTime={10000}/>
       </main>
       <Footer />
     </div>

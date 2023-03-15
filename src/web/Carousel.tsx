@@ -11,16 +11,22 @@ interface TrainerCardListProps {
 export function Carousel({data, transitionTime}: TrainerCardListProps): ReactElement {
   const [index, setIndex] = useState(0);
   const [time, setTime] = useState(new Date());
+  const [percentage, setPercentage] = useState(100);
+  const timeIncrement = (transitionTime ?? 2000) / 100;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
-    }, transitionTime ?? 2000);
-    const newIndex = ((index + 1) % (allCards.length ?? 1))
-    setIndex(newIndex)
+    }, timeIncrement);
+    setPercentage(percentage - 1)
+    if (percentage === 0) {
+      const newIndex = ((index + 1) % (allCards.length ?? 1))
+      setIndex(newIndex)
+      setPercentage(100)
+    }
+
     return () => clearInterval(interval);
   }, [time]);
-
 
   const subscriberTrainerCards = data.filter((trainer: Trainer) => trainer.isSubscriber).map((trainer: Trainer) =>
     <TrainerCard data={trainer} />);
@@ -29,7 +35,12 @@ export function Carousel({data, transitionTime}: TrainerCardListProps): ReactEle
 
   const allCards = [...subscriberTrainerCards, ...simpleCards]
 
-  return allCards[index];
+  return <>
+    {allCards[index]}
+    <div className="max-w-xl bg-zinc-400 h-2.5 dark:bg-gray-700">
+      <div className="bg-zinc-800 h-2.5 w-32" style={{width: `50%`, transitionProperty: 'width'}}></div>
+    </div>
+  </>;
 }
 
 function buildSimplifiedCards(trainers: Trainer[]): ReactElement[] {
