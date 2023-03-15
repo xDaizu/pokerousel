@@ -1,5 +1,6 @@
 import {ReactElement, useEffect, useState} from "react";
 import {TrainerCard} from "./TrainerCard";
+import {TrainerSimplifiedCard} from "./TrainerSimplifiedCard";
 
 interface TrainerCardListProps {
   data: Trainer[]
@@ -15,16 +16,28 @@ export function Carousel({data, transitionTime}: TrainerCardListProps): ReactEle
     const interval = setInterval(() => {
       setTime(new Date());
     }, transitionTime ?? 2000);
-    console.log('use effect ', index)
-    const newIndex = ((index + 1) % (subscriberTrainerCards.length ?? 1))
+    const newIndex = ((index + 1) % (allCards.length ?? 1))
     setIndex(newIndex)
     return () => clearInterval(interval);
   }, [time]);
 
 
-  const subscriberTrainerCards = data.map((trainer: Trainer) =>
+  const subscriberTrainerCards = data.filter((trainer: Trainer) => trainer.isSubscriber).map((trainer: Trainer) =>
     <TrainerCard data={trainer} />);
 
-  return subscriberTrainerCards[index];
+  const simpleCards = buildSimplifiedCards(data.filter((trainer: Trainer) => !trainer.isSubscriber))
+
+  const allCards = [...subscriberTrainerCards, ...simpleCards]
+
+  return allCards[index];
 }
 
+function buildSimplifiedCards(trainers: Trainer[]): ReactElement[] {
+  const chunkSize = 3;
+  const chunks = [];
+  for (let i = 0; i < trainers.length; i += chunkSize) {
+    chunks.push(trainers.slice(i, i + chunkSize));
+  }
+
+  return chunks.map((chunk: Trainer[]) => <TrainerSimplifiedCard data={chunk} />)
+}

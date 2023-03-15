@@ -21,8 +21,11 @@
         "isSubscriber": true,
         "team": [
             "Minccino",
-            "Emolga",
-            "Pikachu"
+            "Cyndaquil",
+            "Marill",
+            "Pikachu",
+            "Minun",
+            "Plusle"
         ],
         "spriteUrl": "lolocha.jpg"
     },
@@ -30,10 +33,13 @@
         "name": "Arqueólogo",
         "title": "Medusa",
         "theme": "pokemon prehistóricos",
+        "isSubscriber": true,
         "team": [
-            "Torterra",
             "Aerodactyl",
-            "Kabutops"
+            "Bastiodon",
+            "Cradily",
+            "Armaldo",
+            "Rampardos"
         ]
     },
     {
@@ -50,6 +56,22 @@
         "theme": "pokemon plantitas",
         "team": [
             "Bulbasaur"
+        ]
+    },
+    {
+        "name": "Alicia",
+        "title": "Dragonera",
+        "theme": "pokemon dragón",
+        "team": [
+            "Dratini"
+        ]
+    },
+    {
+        "name": "Manuchi",
+        "title": "Zampabollos",
+        "theme": "pokemon que te alimentan",
+        "team": [
+            "Alakazam"
         ]
     }
 ]
