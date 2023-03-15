@@ -30,6 +30,19 @@
         "spriteUrl": "lolocha.jpg"
     },
     {
+        "name": "Alimufking",
+        "title": "Orgullo de fuego de León",
+        "theme": "pkmn de corazon ardiente",
+        "isSubscriber": true,
+        "team": [
+            "Charizard",
+            "Torkoal",
+            "Camerupt",
+            "Blaziken"
+        ],
+        "spriteUrl": "danny.png"
+    },
+    {
         "name": "Medusa",
         "title": "Arqueólogo",
         "theme": "pokemon prehistóricos",
