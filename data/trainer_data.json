@@ -30,8 +30,8 @@
         "spriteUrl": "lolocha.jpg"
     },
     {
-        "name": "Arqueólogo",
-        "title": "Medusa",
+        "name": "Medusa",
+        "title": "Arqueólogo",
         "theme": "pokemon prehistóricos",
         "isSubscriber": true,
         "team": [
