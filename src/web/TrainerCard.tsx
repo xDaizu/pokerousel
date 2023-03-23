@@ -25,7 +25,7 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
           <ul className="grid grid-cols-3 grid-rows-2 h-full max-h-full w-full place-content-around">
             {data.team.map((pokemon: Pokemon, index) =>
               <li key={`${data.name}-pokemon-${index}`} className={`${index == 0 ? '' : 'p-2'} flex justify-center content-center items-stretch`}>
-                <div className={`overflow-hidden p-1 pb-2 rounded-full bg-type-${pokemon.type1.toLowerCase()}-dark drop-shadow-xl`}>
+                <div className={`overflow-hidden p-1 pb-1 rounded-full bg-type-${pokemon.type1.toLowerCase()}-dark drop-shadow-xl`}>
                   <img
                     className={`w-full h-full object-cover rounded-full 
                     ${pokemon.type2 === undefined 

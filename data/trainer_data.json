@@ -30,22 +30,37 @@
         "spriteUrl": "lolocha.jpg"
     },
     {
+        "name": "Jedifriki",
+        "title": "Mando Padrazo",
+        "theme": "pokemon peques y adorables",
+        "isSubscriber": true,
+        "team": [
+            "Ralts",
+            "Torchic",
+            "Abra",
+            "Togepi",
+            "Mew",
+            "Azurill"
+        ],
+        "spriteUrl": "blank.png"
+    },
+    {
         "name": "Alimufking",
-        "title": "Orgullo de fuego de León",
+        "title": "Pirómano",
         "theme": "pkmn de corazon ardiente",
         "isSubscriber": true,
         "team": [
-            "Charizard",
+            "Charmander",
             "Torkoal",
             "Camerupt",
             "Blaziken"
         ],
-        "spriteUrl": "danny.png"
+        "spriteUrl": "unknown.png"
     },
     {
-        "name": "Medusa",
+        "name": "JoeBidenJr",
         "title": "Arqueólogo",
-        "theme": "pokemon prehistóricos",
+        "theme": "pokemon fósiles",
         "isSubscriber": true,
         "team": [
             "Aerodactyl",
@@ -57,34 +72,55 @@
     },
     {
         "name": "Juancito",
-        "title": "Amante de lo verde",
+        "title": "Verdemaniaco",
+        "titlePosition": "after",
         "theme": "pokemon verdes",
+        "isSubscriber": true,
         "team": [
-            "Treecko"
+            "Treecko",
+            "Breloom",
+            "Dustox",
+            "Ludicolo",
+            "Kecleon"
         ]
     },
     {
-        "name": "Julio",
-        "title": "Jardinero",
-        "theme": "pokemon plantitas",
+        "name": "NimyMP",
+        "title": "Amigo de los caninos",
+        "theme": "pokemon caninos",
         "team": [
-            "Bulbasaur"
+            "Growlithe"
         ]
     },
     {
-        "name": "Alicia",
-        "title": "Dragonera",
-        "theme": "pokemon dragón",
+        "name": "Nighdream",
+        "title": "Sombra andante",
+        "theme": "pokemon tipo siniestro",
         "team": [
-            "Dratini"
+            "Zorua"
         ]
     },
     {
         "name": "Manuchi",
         "title": "Zampabollos",
+        "isSubscriber": true,
         "theme": "pokemon que te alimentan",
         "team": [
-            "Alakazam"
+            "Miltank",
+            "Chansey",
+            "Tropius",
+            "Gogoat"
+        ]
+    },
+    {
+        "name": "Andresito",
+        "title": "Apapachable",
+        "theme": "pokemon hadas gorditas rosas apapachables",
+        "team": [
+            "Blissey",
+            "Igglybuff",
+            "Cleffa",
+            "Happiny"
         ]
     }
 ]
