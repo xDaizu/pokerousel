@@ -29,7 +29,7 @@ export function Carousel({data, transitionTime}: TrainerCardListProps): ReactEle
 
   const allCards = [...subscriberTrainerCards, ...simpleCards]
 
-  return allCards[5];
+  return allCards[index];
 }
 
 function buildSimplifiedCards(trainers: Trainer[]): ReactElement[] {
