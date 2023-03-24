@@ -9,7 +9,7 @@ const PRODUCTION_PUBLIC_PATH = '/pokerousel';
 const isProduction = process.env.NODE_ENV === 'production';
 
 const APP_DESCRIPTION = 'A trainer displayer for twitch.tv/lolochaa';
-const APP_NAME = 'Pokerousel';
+const APP_NAME = 'Pokérousel';
 const APP_URL = '<APP_URL>';
 const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined;
 
