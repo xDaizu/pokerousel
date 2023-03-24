@@ -1,6 +1,12 @@
 
 deploy:
+	#temporary fix
+	mv webpack.config.js webpack.config.js.old
+	mv webpack.config.pages.js webpack.config.js
+	rm -rf dist
 	npm run build
+
+	#npm run build --config webpack.config.pages.js
 	git add -f dist
 	git commit -m "Build"
 	# -- https://gist.github.com/tduarte/eac064b4778711b116bb827f8c9bef7b
