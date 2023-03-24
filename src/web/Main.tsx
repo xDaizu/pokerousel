@@ -4,22 +4,25 @@ import Footer from './Footer'
 import './styles.css'
 import {importTrainers} from "../core/TrainerImporter";
 import {Carousel} from "./Carousel";
-import {useParams, useSearchParams} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 
-const trainers = importTrainers()
+const allTrainers = importTrainers()
 
 
 export default function Main(): ReactElement {
   const {t} = useTranslation()
   const [searchParams] = useSearchParams();
   const [clean, setClean] = useState(true)
+  const [trainerFilter, setTrainerFilter] = useState<string | undefined>(undefined)
+
   useEffect(() => {
     const currentParams = Object.fromEntries([...searchParams]);
     const isCleanSet = (currentParams.clean ?? null) !== null
     setClean(isCleanSet)
-    console.log(currentParams); // get new values onchange
+    setTrainerFilter(currentParams.trainer ?? undefined)
   }, [searchParams]);
+
 
   return (
     <div className="min-h-full max-w-7xl mx-4 sm:mx-8 xl:mx-auto">
@@ -30,7 +33,7 @@ export default function Main(): ReactElement {
           </h1>
         }
 
-        <Carousel data={trainers} />
+        <Carousel data={allTrainers.filter((trainer: Trainer) => (trainerFilter == undefined || trainer.name.toLowerCase() === trainerFilter.toLowerCase()))} />
       </main>
       {clean || <Footer />}
     </div>
