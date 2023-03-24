@@ -30,7 +30,7 @@ module.exports = {
     },
   },
   devtool: isProduction ? undefined : 'source-map',
-  entry: {index: path.resolve(__dirname, 'src/web/index.ts')},
+  entry: {index: path.resolve(__dirname, 'src/web/index.tsx')},
   mode: 'production',
   module: {
     rules: [

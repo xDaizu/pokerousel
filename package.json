@@ -24,7 +24,8 @@
     "i18next-browser-languagedetector": "6.1.4",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-i18next": "11.16.9"
+    "react-i18next": "11.16.9",
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.1",
