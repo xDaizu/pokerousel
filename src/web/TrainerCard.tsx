@@ -18,26 +18,33 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
         <div className="w-full no-flex">
           <h3 className="font-retro text-white">{data.title} {data.name}</h3>
         </div>
-        <div className={'pl-4 pb-1 w-full no-flex'}>
+        <div className={'pl-4 pb-2 w-full no-flex'}>
           <h3 className="font-retro text-yellow-200 text-sm">{data.theme}</h3>
         </div>
         <div className="w-full flex-1">
           <ul className="grid grid-cols-3 grid-rows-2 h-full max-h-full w-full place-content-around">
             {data.team.map((pokemon: Pokemon, index) =>
-              <li key={`${data.name}-pokemon-${index}`} className={`${index == 0 ? '' : ''} flex justify-center content-center items-stretch`}>
-                <div className={`w-20 h-20 overflow-hidden ${index == 0 ? '-m-1' : ''} rounded-full bg-type-${pokemon.type1.toLowerCase()}-dark drop-shadow-xl`}>
-                  <img
-                    className={`w-24 h-24 object-cover rounded-full -mt-2.5
-                    ${pokemon.type2 === undefined 
+              <li key={`${data.name}-pokemon-${index}`} className={`${index == 0 ? '-mt-2' : ''} m-0.5 flex justify-center content-center items-stretch`}>
+                <div className={`h-full aspect-square overflow-hidden ${index == 0 ? '' : ''} rounded-full bg-type-${pokemon.type1.toLowerCase()}-dark drop-shadow-xl`}>
+                  <div
+                    className={`aspect-square object-cover overflow-hidden rounded-full m-1 mt-0.5
+                       ${pokemon.type2 === undefined
                       ? `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${pokemon.type1.toLowerCase()}-dark via-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()}-darko`
                       : `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()} via-type-${(pokemon.type2 ?? pokemon.type1).toLowerCase()}-dark`
                     }
-                    `}
-                    // alternative for plain double color
-                    // style={{background: 'linear-gradient(110deg, #6890F0 60%, #F4BDC9 60%)'}}
-                    src={`static/pokedex/sprites/${pokemon.spriteUrl}`}
-                    style={{"clip-path": "circle(40%)"}}
-                  />
+                       `}>
+                    <div className={`h-full aspect-square`}
+                         style={
+                           {
+                             border: '2px',
+                             backgroundImage: `url(static/pokedex/sprites/${pokemon.spriteUrl})`,
+                             backgroundPosition: "center",
+                             backgroundSize: "cover",
+                             transform: `scale(${index == 0 ? '1.5' : '1.3'})`
+                           }
+                         }>
+                    </div>
+                  </div>
                 </div>
 
                 {/*{pokemon.name}*/}
