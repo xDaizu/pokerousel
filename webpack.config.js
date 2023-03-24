@@ -8,8 +8,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PRODUCTION_PUBLIC_PATH = '/pokerousel';
 const isProduction = (process.env.NODE_ENV === 'production' || true);
 
-const APP_DESCRIPTION = '<APP_DESCRIPTION>';
-const APP_NAME = '<APP_NAME>';
+const APP_DESCRIPTION = 'A trainer displayer for twitch.tv/lolochaa';
+const APP_NAME = 'Pokerousel';
 const APP_URL = '<APP_URL>';
 const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined;
 
