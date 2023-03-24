@@ -15,7 +15,7 @@ const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined;
 
 module.exports = {
   devServer: {
-    devMiddleware: {
+    devMiddleware: {fsa
       publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/',
     },
     headers: {
