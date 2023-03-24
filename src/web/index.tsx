@@ -15,6 +15,9 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: createElement(Main),
+  },{
+    path: "/pokerousel/",
+    element: <span>The router thinks I am accessing the /pokerousel/ route</span>,
   },
 ]);
 
