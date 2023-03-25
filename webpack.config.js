@@ -100,7 +100,7 @@ module.exports = {
     clean: true,
     filename: 'artifacts/[name].js',
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/pokerousel/',
+    publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/',
   },
   plugins: [
     new ESLintPlugin({
