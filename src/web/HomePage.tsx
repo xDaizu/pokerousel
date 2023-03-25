@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSearchParams } from 'react-router-dom'
 import type { Trainer } from '../core/Trainer'
@@ -17,6 +17,14 @@ export function HomePage(): ReactElement {
     undefined,
   )
 
+  const trainerList = useMemo(() => {
+    return allTrainers.filter(
+      (trainer: Trainer) =>
+        trainerFilter == undefined ||
+        trainer.name.toLowerCase() === trainerFilter.toLowerCase(),
+    )
+  }, [trainerFilter])
+
   useEffect(() => {
     const isCleanSet = searchParams.has('clean')
     setClean(isCleanSet)
@@ -32,13 +40,7 @@ export function HomePage(): ReactElement {
           </h1>
         )}
 
-        <Carousel
-          data={allTrainers.filter(
-            (trainer: Trainer) =>
-              trainerFilter == undefined ||
-              trainer.name.toLowerCase() === trainerFilter.toLowerCase(),
-          )}
-        />
+        <Carousel data={trainerList} />
       </main>
       {clean || <Footer />}
     </div>

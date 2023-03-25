@@ -1,8 +1,12 @@
+import classnames from 'classnames'
 import type { ReactElement } from 'react'
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import type { Trainer } from '../core/Trainer'
 import { TrainerCard } from './TrainerCard'
 import { TrainerSimplifiedCard } from './TrainerSimplifiedCard'
+import { useTimedCyclicCounter } from './useTimedCyclicCounter'
+
+const TIME_STEP = 2000 // ms
 
 interface TrainerCardListProps {
   data: Trainer[]
@@ -13,31 +17,49 @@ export function Carousel({
   data,
   transitionTime,
 }: TrainerCardListProps): ReactElement {
-  const [index, setIndex] = useState(0)
-  const [time, setTime] = useState(new Date())
+  const subscriberTrainerCards = useMemo(() => {
+    return data
+      .filter((trainer: Trainer) => trainer.isSubscriber)
+      .map((trainer: Trainer) => (
+        <TrainerCard data={trainer} key={trainer.name} />
+      ))
+  }, [data])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date())
-    }, transitionTime ?? 2000)
-    const newIndex = (index + 1) % (allCards.length ?? 1)
-    setIndex(newIndex)
-    return () => void clearInterval(interval)
-  }, [time])
+  const simpleCards = useMemo(() => {
+    return buildSimplifiedCards(
+      data.filter((trainer: Trainer) => !trainer.isSubscriber),
+    )
+  }, [data])
 
-  const subscriberTrainerCards = data
-    .filter((trainer: Trainer) => trainer.isSubscriber)
-    .map((trainer: Trainer) => (
-      <TrainerCard data={trainer} key={trainer.name} />
-    ))
-
-  const simpleCards = buildSimplifiedCards(
-    data.filter((trainer: Trainer) => !trainer.isSubscriber),
+  const allCards = useMemo(
+    () => [...subscriberTrainerCards, ...simpleCards],
+    [simpleCards, subscriberTrainerCards],
+  )
+  const [counter, oldCounter] = useTimedCyclicCounter(
+    allCards.length,
+    transitionTime ?? TIME_STEP,
   )
 
-  const allCards = [...subscriberTrainerCards, ...simpleCards]
-
-  return allCards[index]
+  return (
+    <div id="carousel" className="relative">
+      {allCards.map((card, index) => {
+        return (
+          <div
+            style={{ zIndex: allCards.length - index }}
+            className={classnames(
+              'absolute transition-transform delay-100 duration-1000',
+              index === oldCounter && '-translate-x-full',
+              index !== counter && index !== oldCounter && 'invisible',
+            )}
+            // eslint-disable-next-line react/no-array-index-key
+            key={index}
+          >
+            {card}
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 function buildSimplifiedCards(trainers: Trainer[]): ReactElement[] {

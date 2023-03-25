@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       ),
     },
   ],
-  { basename: 'pokerousel/' },
+  // { basename: 'pokerousel' },
 )
 
 export default function Main(): ReactElement {
