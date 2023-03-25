@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
-  RouterProvider, useParams,
+  RouterProvider,
 } from "react-router-dom";
 
 import {createElement} from 'react'
@@ -15,7 +14,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: createElement(Main),
-  },{
+  }, {
     path: "/pokerousel/",
     element: <span>The router thinks I am accessing the /pokerousel/ route</span>,
   },

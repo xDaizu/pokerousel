@@ -16,7 +16,7 @@ const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined;
 module.exports = {
   devServer: {
     devMiddleware: {
-      publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/',
+      publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/pokerousel/',
     },
     headers: {
       'Access-Control-Allow-Headers':
@@ -100,7 +100,7 @@ module.exports = {
     clean: true,
     filename: 'artifacts/[name].js',
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/',
+    publicPath: isProduction ? PRODUCTION_PUBLIC_PATH : '/pokerousel/',
   },
   plugins: [
     new ESLintPlugin({

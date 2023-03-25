@@ -1,7 +1,7 @@
 
 build:
 	#temporary fix
-	npm run build -- --config webpack.config.pages.js
+	npm run build
 
 deploy: build
 	git add -f dist
