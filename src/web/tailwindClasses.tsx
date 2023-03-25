@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Dynamic classes added here so they are compiled into the CSS
 const backgrounds = {
   normal: 'bg-type-normal',
@@ -17,7 +18,7 @@ const backgrounds = {
   dark: 'bg-type-dark',
   dragon: 'bg-type-dragon',
   steel: 'bg-type-steel',
-  fairy: 'bg-type-fairy'
+  fairy: 'bg-type-fairy',
 }
 const backgroundsLight = {
   normal: 'bg-type-normal-light',
@@ -37,7 +38,7 @@ const backgroundsLight = {
   dark: 'bg-type-dark-light',
   dragon: 'bg-type-dragon-light',
   steel: 'bg-type-steel-light',
-  fairy: 'bg-type-fairy-light'
+  fairy: 'bg-type-fairy-light',
 }
 const backgroundsDark = {
   normal: 'bg-type-normal-dark',
@@ -57,7 +58,7 @@ const backgroundsDark = {
   dark: 'bg-type-dark-dark',
   dragon: 'bg-type-dragon-dark',
   steel: 'bg-type-steel-dark',
-  fairy: 'bg-type-fairy-dark'
+  fairy: 'bg-type-fairy-dark',
 }
 const borders = {
   normal: 'border-type-normal',
@@ -77,7 +78,7 @@ const borders = {
   dark: 'border-type-dark',
   dragon: 'border-type-dragon',
   steel: 'border-type-steel',
-  fairy: 'border-type-fairy'
+  fairy: 'border-type-fairy',
 }
 
 const gradientFrom = {
@@ -98,7 +99,7 @@ const gradientFrom = {
   dark: 'from-type-dark',
   dragon: 'from-type-dragon',
   steel: 'from-type-steel',
-  fairy: 'from-type-fairy'
+  fairy: 'from-type-fairy',
 }
 const gradientFromLight = {
   normal: 'from-type-normal-light',
@@ -118,7 +119,7 @@ const gradientFromLight = {
   dark: 'from-type-dark-light',
   dragon: 'from-type-dragon-light',
   steel: 'from-type-steel-light',
-  fairy: 'from-type-fairy-light'
+  fairy: 'from-type-fairy-light',
 }
 const gradientFromDark = {
   normal: 'from-type-normal-dark',
@@ -138,7 +139,7 @@ const gradientFromDark = {
   dark: 'from-type-dark-dark',
   dragon: 'from-type-dragon-dark',
   steel: 'from-type-steel-dark',
-  fairy: 'from-type-fairy-dark'
+  fairy: 'from-type-fairy-dark',
 }
 const gradientTo = {
   normal: 'to-type-normal',
@@ -158,7 +159,7 @@ const gradientTo = {
   dark: 'to-type-dark',
   dragon: 'to-type-dragon',
   steel: 'to-type-steel',
-  fairy: 'to-type-fairy'
+  fairy: 'to-type-fairy',
 }
 const gradientToLight = {
   normal: 'to-type-normal-light',
@@ -178,7 +179,7 @@ const gradientToLight = {
   dark: 'to-type-dark-light',
   dragon: 'to-type-dragon-light',
   steel: 'to-type-steel-light',
-  fairy: 'to-type-fairy-light'
+  fairy: 'to-type-fairy-light',
 }
 const gradientToDark = {
   normal: 'to-type-normal-dark',
@@ -198,7 +199,7 @@ const gradientToDark = {
   dark: 'to-type-dark-dark',
   dragon: 'to-type-dragon-dark',
   steel: 'to-type-steel-dark',
-  fairy: 'to-type-fairy-dark'
+  fairy: 'to-type-fairy-dark',
 }
 const gradientVia = {
   normal: 'via-type-normal',
@@ -218,7 +219,7 @@ const gradientVia = {
   dark: 'via-type-dark',
   dragon: 'via-type-dragon',
   steel: 'via-type-steel',
-  fairy: 'via-type-fairy'
+  fairy: 'via-type-fairy',
 }
 const gradientViaLight = {
   normal: 'via-type-normal-light',
@@ -238,7 +239,7 @@ const gradientViaLight = {
   dark: 'via-type-dark-light',
   dragon: 'via-type-dragon-light',
   steel: 'via-type-steel-light',
-  fairy: 'via-type-fairy-light'
+  fairy: 'via-type-fairy-light',
 }
 const gradientViaDark = {
   normal: 'via-type-normal-dark',
@@ -258,5 +259,5 @@ const gradientViaDark = {
   dark: 'via-type-dark-dark',
   dragon: 'via-type-dragon-dark',
   steel: 'via-type-steel-dark',
-  fairy: 'via-type-fairy-dark'
+  fairy: 'via-type-fairy-dark',
 }

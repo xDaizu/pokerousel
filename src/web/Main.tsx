@@ -1,41 +1,31 @@
-import type {ReactElement} from 'react'
-import {useTranslation} from 'react-i18next'
-import Footer from './Footer'
+import type { ReactElement } from 'react'
+import { StrictMode } from 'react'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { HomePage } from './HomePage'
 import './styles.css'
-import {importTrainers} from "../core/TrainerImporter";
-import {Carousel} from "./Carousel";
-import {useSearchParams} from "react-router-dom";
-import {useEffect, useState} from "react";
 
-const allTrainers = importTrainers()
+// const allTrainers = importTrainers()
 
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <HomePage />,
+    },
+    {
+      path: '/pokerousel/',
+      element: (
+        <span>The router thinks I am accessing the /pokerousel/ route</span>
+      ),
+    },
+  ],
+  { basename: 'pokerousel/' },
+)
 
 export default function Main(): ReactElement {
-  const {t} = useTranslation()
-  const [searchParams] = useSearchParams();
-  const [clean, setClean] = useState(true)
-  const [trainerFilter, setTrainerFilter] = useState<string | undefined>(undefined)
-
-  useEffect(() => {
-    const currentParams = Object.fromEntries([...searchParams]);
-    const isCleanSet = (currentParams.clean ?? null) !== null
-    setClean(isCleanSet)
-    setTrainerFilter(currentParams.trainer ?? undefined)
-  }, [searchParams]);
-
-
   return (
-    <div className="min-h-full max-w-7xl mx-4 sm:mx-8 xl:mx-auto">
-      <main>
-        {clean ||
-          <h1 className="text-5xl text-center font-display font-light mb-6 mt-10">
-            {t('app.title')}
-          </h1>
-        }
-
-        <Carousel data={allTrainers.filter((trainer: Trainer) => (trainerFilter == undefined || trainer.name.toLowerCase() === trainerFilter.toLowerCase()))} />
-      </main>
-      {clean || <Footer />}
-    </div>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
   )
 }

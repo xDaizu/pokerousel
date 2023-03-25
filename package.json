@@ -9,6 +9,7 @@
     "build": "NODE_ENV=production webpack",
     "cy:open": "cypress open --e2e",
     "i18n:extract": "i18next",
+    "lint": "prettier --write . && npm run test:lint -- --fix",
     "serve": "webpack serve --mode=development",
     "test": "npm run test:types && npm run test:lint && npm run test:specs && npm run test:components && npm run test:prettier && npm run test:cy",
     "test:components": "ts-mocha -p tsconfig.tests.json --require global-jsdom/register 'src/web/**/*.spec.{ts,tsx}'",

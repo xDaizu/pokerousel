@@ -1,17 +1,17 @@
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
+const path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-const PRODUCTION_PUBLIC_PATH = '/pokerousel';
-const isProduction = process.env.NODE_ENV === 'production';
+const PRODUCTION_PUBLIC_PATH = '/pokerousel'
+const isProduction = process.env.NODE_ENV === 'production'
 
-const APP_DESCRIPTION = 'A trainer displayer for twitch.tv/lolochaa';
-const APP_NAME = 'Pokérousel';
-const APP_URL = '<APP_URL>';
-const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined;
+const APP_DESCRIPTION = 'A trainer displayer for twitch.tv/lolochaa'
+const APP_NAME = 'Pokérousel'
+const APP_URL = '<APP_URL>'
+const GOOGLE_ANALYTICS_MEASUREMENT_ID = undefined
 
 module.exports = {
   devServer: {
@@ -30,7 +30,7 @@ module.exports = {
     },
   },
   devtool: isProduction ? undefined : 'source-map',
-  entry: {index: path.resolve(__dirname, 'src/web/index.tsx')},
+  entry: { index: path.resolve(__dirname, 'src/web/index.ts') },
   mode: 'production',
   module: {
     rules: [
@@ -55,7 +55,7 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          {loader: MiniCssExtractPlugin.loader},
+          { loader: MiniCssExtractPlugin.loader },
           {
             loader: 'css-loader',
             options: {
@@ -116,7 +116,7 @@ module.exports = {
       filename: 'index.html',
       inject: false,
       links: [
-        {href: 'https://fonts.googleapis.com', rel: 'preconnect'},
+        { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
         {
           crossOrigin: '',
           href: 'https://fonts.gstatic.com',
@@ -136,8 +136,8 @@ module.exports = {
         //   content: '',
         //   property: 'og:image',
         // },
-        'og:title': {content: APP_NAME, property: 'og:title'},
-        'og:type': {content: 'website', property: 'og:type'},
+        'og:title': { content: APP_NAME, property: 'og:title' },
+        'og:type': { content: 'website', property: 'og:type' },
         'og:url': {
           content: APP_URL,
           property: 'og:url',
@@ -148,10 +148,10 @@ module.exports = {
       title: APP_NAME,
       ...(GOOGLE_ANALYTICS_MEASUREMENT_ID
         ? {
-          googleAnalytics: {
-            measurementId: GOOGLE_ANALYTICS_MEASUREMENT_ID,
-          },
-        }
+            googleAnalytics: {
+              measurementId: GOOGLE_ANALYTICS_MEASUREMENT_ID,
+            },
+          }
         : {}),
     }),
     // new FaviconsWebpackPlugin({
@@ -179,7 +179,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'src/static/', to: 'static/',
+          from: 'src/static/',
+          to: 'static/',
           globOptions: {
             dot: false,
             gitignore: false,
@@ -188,7 +189,8 @@ module.exports = {
           },
         },
         {
-          from: 'src/static/pokedex', to: 'static/pokedex',
+          from: 'src/static/pokedex',
+          to: 'static/pokedex',
           globOptions: {
             dot: false,
             gitignore: false,
@@ -203,4 +205,4 @@ module.exports = {
     extensions: ['.ts', '.js', '.tsx', '.jsx', '.json', '.mjs', '.wasm'],
   },
   target: 'web',
-};
+}
