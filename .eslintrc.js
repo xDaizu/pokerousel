@@ -5,7 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['eslint:recommended', 'prettier'],
-  ignorePatterns: ['/dist', '.*', '/node_modules'],
+  ignorePatterns: ['/dist', '.*', '/node_modules', '/src/static/pokedex'],
   overrides: [
     {
       env: {
@@ -336,6 +336,5 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
-    'sort-keys': 'warn',
   },
 }

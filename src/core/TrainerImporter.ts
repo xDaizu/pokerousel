@@ -1,14 +1,16 @@
 import data from '../../data/trainer_data.json'
-import {findByName} from "./Pokedex";
+import { findByName } from './Pokedex'
+import type { Pokemon } from './Pokemon'
+import type { Trainer } from './Trainer'
 
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
-  name: string
   isSubscriber?: boolean
-  title: string
-  theme: string
+  name: string
   spriteUrl?: string
   team: string[]
+  theme: string
+  title: string
 }
 
 export function importTrainers(): Trainer[] {
@@ -16,7 +18,7 @@ export function importTrainers(): Trainer[] {
 
   const trainers = trainerData.map(importTrainer)
 
-  return trainers;
+  return trainers
 }
 
 function importTrainer(trainerJson: TrainerJson): Trainer {
@@ -26,10 +28,10 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
     spriteUrl: trainerJson.spriteUrl,
     title: trainerJson.title,
     theme: trainerJson.theme,
-    team: trainerJson.team.map(importPokemon)
+    team: trainerJson.team.map(importPokemon),
   }
 }
 
 function importPokemon(pokemonName: string): Pokemon {
-  return findByName(pokemonName);
+  return findByName(pokemonName)
 }

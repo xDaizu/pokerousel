@@ -1,8 +1,10 @@
-interface Trainer {
-  name: string
+import type { Pokemon } from './Pokemon'
+
+export interface Trainer {
   isSubscriber: boolean
-  title: string
-  theme: string
+  name: string
   spriteUrl?: string
   team: Pokemon[]
+  theme: string
+  title: string
 }
