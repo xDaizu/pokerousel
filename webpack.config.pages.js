@@ -184,6 +184,7 @@ module.exports = {
             dot: false,
             gitignore: false,
             force: true,
+            ignore: ['**/images/*', '**/thumbnails/*'],
           },
         },
         {
