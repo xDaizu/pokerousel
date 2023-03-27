@@ -47,14 +47,8 @@ export function TrainerCard({ data }: TrainerCardProps): ReactElement {
                       className={`aspect-square object-cover overflow-hidden rounded-full m-1 mt-0.5
                        ${
                          pokemon.type2 === undefined
-                           ? `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${pokemon.type1.toLowerCase()}-dark via-type-${(
-                               pokemon.type2 ?? pokemon.type1
-                             ).toLowerCase()}-dark`
-                           : `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} to-type-${(
-                               pokemon.type2 ?? pokemon.type1
-                             ).toLowerCase()} via-type-${(
-                               pokemon.type2 ?? pokemon.type1
-                             ).toLowerCase()}-dark`
+                           ? `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} via-type-${pokemon.type1.toLowerCase()}-dark to-type-${pokemon.type1.toLowerCase()}-dark`
+                           : `bg-gradient-to-b from-type-${pokemon.type1.toLowerCase()} via-type-${pokemon.type2.toLowerCase()}-dark to-type-${pokemon.type2.toLowerCase()}`
                        }
                        `}
                     >

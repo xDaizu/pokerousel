@@ -226,7 +226,7 @@ module.exports = {
           },
           {
             selector: 'objectLiteralProperty',
-            format: ['camelCase', 'PascalCase'],
+            format: null,
             leadingUnderscore: 'allowSingleOrDouble',
           },
           {

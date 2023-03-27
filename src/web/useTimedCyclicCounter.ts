@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-type CyclicCounter = [number, undefined | number]
+type CyclicCounter = [number | undefined, undefined | number]
 
 export function useTimedCyclicCounter(
   maxCounter: number,
@@ -11,9 +11,13 @@ export function useTimedCyclicCounter(
   const updateCounter = useCallback(
     () =>
       void setCounter(([oldValue]) => {
+        if (oldValue === undefined) {
+          return [0, undefined]
+        }
+
         const nextValue = oldValue + 1
         if (nextValue >= maxCounter) {
-          return [0, oldValue]
+          return [undefined, oldValue]
         }
         return [nextValue, oldValue]
       }),
