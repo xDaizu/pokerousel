@@ -1,5 +1,6 @@
 import pokedexDataJSON from '../static/pokedex/pokedex.json'
-import type {Pokemon} from './Pokemon'
+import type { Pokemon } from './Pokemon'
+import { APP_CONFIG } from './app-config'
 
 type PokemonListJson = PokemonJson[]
 type PokemonJson = {
@@ -7,9 +8,6 @@ type PokemonJson = {
   name: { english: string }
   type: string[]
 }
-
-// TODO: Move to some kind of configuration parameter
-const removeFairyType = true;
 
 export function findByName(name: string): Pokemon {
   const pokedexData = pokedexDataJSON as unknown as PokemonListJson
@@ -21,11 +19,11 @@ export function findByName(name: string): Pokemon {
     throw new Error(`pokemon ${name} not found`)
   }
 
-  let type1 = pokemonDexData.type[0];
-  let type2 = pokemonDexData.type[1] ?? undefined;
-  if (removeFairyType) {
-    type1 = type1 === "Fairy" ? 'Normal' : type1;
-    type2 = (type2 ?? undefined) === "Fairy" ? undefined : type2;
+  let type1 = pokemonDexData.type[0]
+  let type2: string | undefined = pokemonDexData.type[1]
+  if (APP_CONFIG.removeFairyType) {
+    type1 = type1 === 'Fairy' ? 'Normal' : type1
+    type2 = type2 === 'Fairy' ? undefined : type2
   }
 
   return {

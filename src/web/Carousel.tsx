@@ -2,11 +2,10 @@ import classnames from 'classnames'
 import type { ReactElement } from 'react'
 import { useMemo } from 'react'
 import type { Trainer } from '../core/Trainer'
+import { APP_CONFIG } from '../core/app-config'
 import { TrainerCard } from './TrainerCard'
 import { TrainerSimplifiedCard } from './TrainerSimplifiedCard'
 import { useTimedCyclicCounter } from './useTimedCyclicCounter'
-
-const TIME_STEP = 2000 // ms
 
 interface TrainerCardListProps {
   data: Trainer[]
@@ -37,7 +36,7 @@ export function Carousel({
   )
   const [counter, oldCounter] = useTimedCyclicCounter(
     allCards.length,
-    transitionTime ?? TIME_STEP,
+    transitionTime ?? APP_CONFIG.timeStep,
   )
 
   return (
@@ -45,19 +44,42 @@ export function Carousel({
       {allCards.map((card, index) => {
         return (
           <div
-            style={{ zIndex: allCards.length - index }}
-            className={classnames(
-              'absolute transition-transform delay-100 duration-1000',
-              index === oldCounter && '-translate-x-full',
-              index !== counter && index !== oldCounter && 'invisible',
-            )}
+            style={{
+              width: '560px',
+              height: '240px',
+              zIndex: allCards.length - index,
+            }}
+            className="absolute overflow-hidden"
             // eslint-disable-next-line react/no-array-index-key
             key={index}
           >
-            {card}
+            <div
+              className={classnames(
+                'w-full h-full',
+
+                {
+                  'transition-transform delay-100 duration-1000':
+                    allCards.length > 1,
+                  '-translate-x-full': index === oldCounter,
+                  'invisible': index !== counter && index !== oldCounter,
+                },
+              )}
+            >
+              {card}
+            </div>
           </div>
         )
       })}
+      <div
+        style={{
+          width: '560px',
+          height: '240px',
+          zIndex: 0,
+        }}
+        className="absolute overflow-hidden"
+      >
+        {allCards[0]}
+      </div>
     </div>
   )
 }
