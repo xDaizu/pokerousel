@@ -6,7 +6,7 @@ interface TrainerCardProps {
   data: Trainer
 }
 
-const DEFAULT_TRAINER_IMAGE = 'unknown.png'
+const DEFAULT_TRAINER_IMAGE = 'blank.png'
 
 export function TrainerCard({ data }: TrainerCardProps): ReactElement {
   return (
