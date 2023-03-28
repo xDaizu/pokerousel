@@ -48,13 +48,14 @@
         "spriteUrl": "alimufking.png"
     },
     {
-        "name": "JoeBidenJr",
+        "name": "JosephBidenJr",
         "title": "Arqueólogo",
         "theme": "pokemon fósiles",
         "isSubscriber": true,
         "team": [
             "Aerodactyl"
-        ]
+        ],
+        "spriteUrl": "joseph.png"
     },
     {
         "name": "Juancito",
@@ -163,8 +164,8 @@
         "spriteUrl": "tulka.png"
     },
     {
-        "name": "Fran",
-        "title": "Señor Oscurito del ",
+        "name": "LordDarksito",
+        "title": "Señor Oscurito",
         "theme": "pokemon negros o de la oscuridad",
         "isSubscriber": true,
         "team": [
