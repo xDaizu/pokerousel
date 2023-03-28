@@ -6,13 +6,10 @@
         "isSubscriber": true,
         "team": [
             "Minccino",
-            "Cyndaquil",
-            "Azurill",
-            "Pichu",
-            "Emolga",
-            "Pachirisu"
+            "Rattata",
+            "Pichu"
         ],
-        "spriteUrl": "lolocha.jpg"
+        "spriteUrl": "lolochaa.png"
     },
     {
         "name": "Danny",
