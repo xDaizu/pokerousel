@@ -20,9 +20,7 @@
             "Voltorb",
             "Igglybuff",
             "Azurill",
-            "Mankey",
-            "Darumaka",
-            "Hoothoot"
+            "Mankey"
         ],
         "spriteUrl": "dannyEven.png"
     },
@@ -44,6 +42,7 @@
         "isSubscriber": true,
         "team": [
             "Charmander",
+            "Litwick",
             "Torchic"
         ],
         "spriteUrl": "alimufking.png"
@@ -131,11 +130,11 @@
         "name": "Felina Kyle",
         "title": "Miauestra",
         "theme": "pokemon feliformes",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "team": [
             "Espeon",
             "Shinx",
-            "Meowth"
+            "Purrloin"
         ],
         "spriteUrl": "felinakyle.png"
     },
