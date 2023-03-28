@@ -131,7 +131,7 @@
         "name": "Felina Kyle",
         "title": "Miauestra",
         "theme": "pokemon feliformes",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "team": [
             "Espeon",
             "Shinx",
@@ -159,7 +159,8 @@
         "team": [
             "Beldum",
             "Pawniard"
-        ]
+        ],
+        "spriteUrl": "tulka.png"
     },
     {
         "name": "Fran",
