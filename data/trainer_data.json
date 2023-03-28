@@ -64,7 +64,8 @@
         "isSubscriber": true,
         "team": [
             "Treecko"
-        ]
+        ],
+        "spriteUrl": "juancito.png"
     },
     {
         "name": "NimyMP",
@@ -153,7 +154,17 @@
     {
         "name": "Tulka",
         "title": "Spec-ops",
-        "theme": "pokemon usado militarmente",
+        "theme": "pokemon usados militarmente",
+        "isSubscriber": true,
+        "team": [
+            "Beldum",
+            "Pawniard"
+        ]
+    },
+    {
+        "name": "Fran",
+        "title": "Señor Oscurito del ",
+        "theme": "pokemon negros o de la oscuridad",
         "isSubscriber": true,
         "team": [
             "Beldum",
