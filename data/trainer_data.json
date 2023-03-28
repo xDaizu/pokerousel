@@ -1,74 +1,166 @@
 [
-  {
-    "name": "Danny",
-    "title": "Boludo",
-    "theme": "pokemon esfericos",
-    "isSubscriber": true,
-    "team": ["Voltorb", "Jigglypuff", "Marill", "Spheal", "Darumaka", "Gastly"],
-    "spriteUrl": "danny.png"
-  },
-  {
-    "name": "Lolocha",
-    "title": "Niña rata",
-    "theme": "pokemon roedor",
-    "isSubscriber": true,
-    "team": ["Minccino", "Cyndaquil", "Marill", "Pikachu", "Emolga", "Bibarel"],
-    "spriteUrl": "lolocha.jpg"
-  },
-  {
-    "name": "Jedifriki",
-    "title": "Mando Padrazo",
-    "theme": "pokemon monos, peques y adorables",
-    "isSubscriber": true,
-    "team": ["Ralts", "Torchic", "Abra", "Togepi", "Mew", "Azurill"],
-    "spriteUrl": "blank.png"
-  },
-  {
-    "name": "Alimufking",
-    "title": "Pirómano",
-    "theme": "pkmn de corazon ardiente",
-    "isSubscriber": true,
-    "team": ["Charmander", "Torkoal", "Camerupt", "Blaziken"],
-    "spriteUrl": "unknown.png"
-  },
-  {
-    "name": "JoeBidenJr",
-    "title": "Arqueólogo",
-    "theme": "pokemon fósiles",
-    "isSubscriber": true,
-    "team": ["Aerodactyl", "Bastiodon", "Cradily", "Armaldo", "Rampardos"]
-  },
-  {
-    "name": "Juancito",
-    "title": "Verdemaniaco",
-    "titlePosition": "after",
-    "theme": "pokemon verdes",
-    "isSubscriber": true,
-    "team": ["Treecko", "Breloom", "Dustox", "Ludicolo", "Kecleon"]
-  },
-  {
-    "name": "NimyMP",
-    "title": "Amigo de los caninos",
-    "theme": "pokemon caninos",
-    "team": ["Growlithe"]
-  },
-  {
-    "name": "Nighdream",
-    "title": "Sombra andante",
-    "theme": "pokemon tipo siniestro",
-    "team": ["Zorua"]
-  },
-  {
-    "name": "Manuchi",
-    "title": "Zampabollos",
-    "isSubscriber": true,
-    "theme": "pokemon que te alimentan",
-    "team": ["Miltank", "Chansey", "Tropius", "Gogoat"]
-  },
-  {
-    "name": "Andresito",
-    "title": "Apapachable",
-    "theme": "pokemon hadas gorditas rosas apapachables",
-    "team": ["Blissey", "Igglybuff", "Cleffa", "Happiny"]
-  }
+    {
+        "name": "Lolocha",
+        "title": "Niña rata",
+        "theme": "pokemon roedor",
+        "isSubscriber": true,
+        "team": [
+            "Minccino",
+            "Cyndaquil",
+            "Azurill",
+            "Pichu",
+            "Emolga",
+            "Pachirisu"
+        ],
+        "spriteUrl": "lolocha.jpg"
+    },
+    {
+        "name": "Danny",
+        "title": "Boludo",
+        "theme": "pokemon esfericos",
+        "isSubscriber": true,
+        "team": [
+            "Voltorb",
+            "Igglybuff",
+            "Azurill",
+            "Mankey",
+            "Darumaka",
+            "Hoothoot"
+        ],
+        "spriteUrl": "danny.png"
+    },
+    {
+        "name": "Jedifriki",
+        "title": "Mando Padrazo",
+        "theme": "pokemon monos, peques y adorables",
+        "isSubscriber": true,
+        "team": [
+            "Ralts",
+            "Azurill"
+        ],
+        "spriteUrl": "blank.png"
+    },
+    {
+        "name": "Alimufking",
+        "title": "Pirómano",
+        "theme": "pkmn de corazon ardiente",
+        "isSubscriber": true,
+        "team": [
+            "Charmander",
+            "Torchic"
+        ],
+        "spriteUrl": "alimufking.png"
+    },
+    {
+        "name": "JoeBidenJr",
+        "title": "Arqueólogo",
+        "theme": "pokemon fósiles",
+        "isSubscriber": true,
+        "team": [
+            "Aerodactyl"
+        ]
+    },
+    {
+        "name": "Juancito",
+        "title": "Verdemaniaco",
+        "titlePosition": "after",
+        "theme": "pokemon verdes",
+        "isSubscriber": true,
+        "team": [
+            "Treecko"
+        ]
+    },
+    {
+        "name": "NimyMP",
+        "title": "Amigo de los caninos",
+        "theme": "pokemon caninos",
+        "team": [
+            "Growlithe"
+        ]
+    },
+    {
+        "name": "Nighdream",
+        "title": "Sombra andante",
+        "theme": "pokemon tipo siniestro",
+        "team": [
+            "Zorua"
+        ]
+    },
+    {
+        "name": "Manuchi",
+        "title": "Zampabollos",
+        "isSubscriber": true,
+        "theme": "pokemon que te alimentan",
+        "team": [
+            "Miltank"
+        ],
+        "spriteUrl": "manuchi.png"
+    },
+    {
+        "name": "Andresito",
+        "title": "Apapachable",
+        "theme": "pokemon hadas gorditas rosas apapachables",
+        "team": [
+            "Happiny"
+        ]
+    },
+    {
+        "name": "Lobo",
+        "title": "Nakama",
+        "theme": "pokemon populares",
+        "team": [
+            "Charmander",
+            "Deino",
+            "Swablu"
+        ]
+    },
+    {
+        "name": "Rodra",
+        "title": "Chico edgy",
+        "theme": "pokemon populares",
+        "team": [
+            "Gastly"
+        ]
+    },
+    {
+        "name": "Rayzer",
+        "title": "Reptiliano",
+        "theme": "pokemon reptiles",
+        "team": [
+            "Poliwag"
+        ]
+    },
+    {
+        "name": "Felina Kyle",
+        "title": "Miauestra",
+        "theme": "pokemon feliformes",
+        "isSubscriber": true,
+        "team": [
+            "Espeon",
+            "Shinx",
+            "Meowth"
+        ],
+        "spriteUrl": "felinakyle.png"
+    },
+    {
+        "name": "Stormnvy",
+        "title": "El eeveegualable",
+        "theme": "eeveeluciones",
+        "isSubscriber": true,
+        "team": [
+            "Eevee",
+            "Eevee",
+            "Eevee"
+        ]
+    },
+    {
+        "name": "Tulka",
+        "title": "Spec-ops",
+        "theme": "pokemon usado militarmente",
+        "isSubscriber": true,
+        "team": [
+            "Beldum",
+            "Pawniard"
+        ]
+    }
 ]
