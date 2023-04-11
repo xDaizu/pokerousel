@@ -7,7 +7,8 @@
         "team": [
             "Minccino",
             "Rattata",
-            "Pichu"
+            "Pichu",
+            "Marill"
         ],
         "spriteUrl": "lolochaa.png"
     },
@@ -20,7 +21,8 @@
             "Voltorb",
             "Igglybuff",
             "Azurill",
-            "Mankey"
+            "Mankey",
+            "Seedot"
         ],
         "spriteUrl": "dannyEven.png"
     },
@@ -31,9 +33,10 @@
         "isSubscriber": true,
         "team": [
             "Ralts",
-            "Azurill"
+            "Azurill",
+            "Torchic"
         ],
-        "spriteUrl": "blank.png"
+        "spriteUrl": "jedifriki.png"
     },
     {
         "name": "Alimufking",
@@ -65,7 +68,9 @@
         "theme": "pokemon verdes",
         "isSubscriber": true,
         "team": [
-            "Treecko"
+            "Treecko",
+            "Shroomish",
+            "Lotad"
         ],
         "spriteUrl": "juancito.png"
     },
