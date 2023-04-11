@@ -43,7 +43,8 @@
         "team": [
             "Charmander",
             "Litwick",
-            "Torchic"
+            "Torchic",
+            "Camerupt"
         ],
         "spriteUrl": "alimufking.png"
     },
@@ -125,7 +126,11 @@
         "title": "Reptiliano",
         "theme": "pokemon reptiles",
         "team": [
-            "Poliwag"
+            "Poliwag",
+            "Ekans",
+            "Gible",
+            "Charmander",
+            "Sandile"
         ]
     },
     {
@@ -135,7 +140,7 @@
         "isSubscriber": true,
         "team": [
             "Espeon",
-            "Shinx",
+            "Luxio",
             "Purrloin"
         ],
         "spriteUrl": "felinakyle.png"
@@ -146,8 +151,8 @@
         "theme": "eeveeluciones",
         "isSubscriber": true,
         "team": [
-            "Eevee",
-            "Eevee",
+            "Umbreon",
+            "Leafeon",
             "Eevee"
         ],
         "spriteUrl": "stormnvy.png"
@@ -171,6 +176,51 @@
         "team": [
             "Beldum",
             "Pawniard"
+        ]
+    },
+    {
+        "name": "TioPepex",
+        "title": "Sonrisa colmillo",
+        "theme": "pkmn con sonrisa que enseñe el colmillo",
+        "isSubscriber": false,
+        "team": [
+            "Aerodactyl"
+        ]
+    },
+    {
+        "name": "LordDragonss",
+        "title": "Protector de dragones",
+        "theme": "pokemon dragón",
+        "isSubscriber": false,
+        "team": [
+            "Gible"
+        ]
+    },
+    {
+        "name": "Ash",
+        "title": "Fanático",
+        "theme": "pokemon que llevaba Ash",
+        "isSubscriber": false,
+        "team": [
+            "Pikachu"
+        ]
+    },
+    {
+        "name": "Joacoool",
+        "title": "Viajero de regiones",
+        "theme": "pokemon de Kanto",
+        "isSubscriber": false,
+        "team": [
+            "Pikachu"
+        ]
+    },
+    {
+        "name": "Rogelio",
+        "title": "Persona interesante",
+        "theme": "pokemon de tipo normal",
+        "isSubscriber": false,
+        "team": [
+            "Furret"
         ]
     }
 ]
