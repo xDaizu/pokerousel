@@ -7,9 +7,11 @@
         "isActive": true,
         "team": [
             "Minccino",
-            "Rattata",
-            "Pichu",
-            "Marill"
+            "Cyndaquil",
+            "Emolga",
+            "Bidoof",
+            "Marill",
+            "Pikachu"
         ],
         "spriteUrl": "lolochaa.png"
     },
