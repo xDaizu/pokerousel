@@ -176,7 +176,7 @@
         "title": "El eeveegualable",
         "theme": "eeveeluciones",
         "isActive": true,
-        "isSubscriber": false,
+        "isSubscriber": true,
         "team": [
             "Umbreon",
             "Leafeon",
