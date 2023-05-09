@@ -4,6 +4,7 @@
         "title": "Niña rata",
         "theme": "pokemon roedor",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
             "Minccino",
             "Rattata",
@@ -13,16 +14,17 @@
         "spriteUrl": "lolochaa.png"
     },
     {
-        "name": "Danny",
+        "name": "DannyEven",
         "title": "Boludo",
         "theme": "pokemon esfericos",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
             "Voltorb",
-            "Igglybuff",
-            "Azurill",
+            "Jigglypuff",
+            "Marill",
             "Mankey",
-            "Seedot",
+            "Darumaka",
             "Hoothoot"
         ],
         "spriteUrl": "dannyEven.png"
@@ -32,10 +34,14 @@
         "title": "Mando Padrazo",
         "theme": "pokemon monos, peques y adorables",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
             "Ralts",
             "Azurill",
-            "Torchic"
+            "Taillow",
+            "Torchic",
+            "Aron",
+            "Pichu"
         ],
         "spriteUrl": "jedifriki.png"
     },
@@ -44,6 +50,7 @@
         "title": "Pirómano",
         "theme": "pkmn de corazon ardiente",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
             "Charmander",
             "Litwick",
@@ -56,7 +63,8 @@
         "name": "JosephBidenJr",
         "title": "Arqueólogo",
         "theme": "pokemon fósiles",
-        "isSubscriber": true,
+        "isSubscriber": false,
+        "isActive": true,
         "team": [
             "Aerodactyl"
         ],
@@ -68,10 +76,14 @@
         "titlePosition": "after",
         "theme": "pokemon verdes",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
-            "Treecko",
-            "Shroomish",
-            "Lotad"
+            "Grovyle",
+            "Ludicolo",
+            "Breloom",
+            "Gallade",
+            "Solosis",
+            "Natu"
         ],
         "spriteUrl": "juancito.png"
     },
@@ -87,6 +99,7 @@
         "name": "Nighdream",
         "title": "Sombra andante",
         "theme": "pokemon tipo siniestro",
+        "isActive": true,
         "team": [
             "Zorua"
         ]
@@ -95,6 +108,7 @@
         "name": "Manuchi",
         "title": "Zampabollos",
         "isSubscriber": true,
+        "isActive": true,
         "theme": "pokemon que te alimentan",
         "team": [
             "Miltank"
@@ -105,6 +119,7 @@
         "name": "Andresito",
         "title": "Apapachable",
         "theme": "pokemon hadas gorditas rosas apapachables",
+        "isActive": true,
         "team": [
             "Happiny"
         ]
@@ -131,6 +146,7 @@
         "name": "Rayzer",
         "title": "Reptiliano",
         "theme": "pokemon reptiles",
+        "isActive": true,
         "team": [
             "Poliwag",
             "Ekans",
@@ -144,10 +160,12 @@
         "title": "Miauestra",
         "theme": "pokemon feliformes",
         "isSubscriber": true,
+        "isActive": true,
         "team": [
             "Espeon",
             "Luxio",
-            "Purrloin"
+            "Liepard",
+            "Skitty"
         ],
         "spriteUrl": "felinakyle.png"
     },
@@ -155,7 +173,8 @@
         "name": "Stormnvy",
         "title": "El eeveegualable",
         "theme": "eeveeluciones",
-        "isSubscriber": true,
+        "isActive": true,
+        "isSubscriber": false,
         "team": [
             "Umbreon",
             "Leafeon",
@@ -189,6 +208,7 @@
         "title": "Sonrisa colmillo",
         "theme": "pkmn con sonrisa que enseñe el colmillo",
         "isSubscriber": false,
+        "isActive": true,
         "team": [
             "Aerodactyl"
         ]
@@ -198,6 +218,7 @@
         "title": "Protector de dragones",
         "theme": "pokemon dragón",
         "isSubscriber": false,
+        "isActive": true,
         "team": [
             "Gible"
         ]
@@ -225,6 +246,7 @@
         "title": "Persona interesante",
         "theme": "pokemon de tipo normal",
         "isSubscriber": false,
+        "isActive": true,
         "team": [
             "Furret"
         ]

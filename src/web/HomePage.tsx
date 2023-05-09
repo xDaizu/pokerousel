@@ -1,16 +1,16 @@
-import type { ReactElement } from 'react'
-import { useEffect, useMemo, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { useSearchParams } from 'react-router-dom'
-import type { Trainer } from '../core/Trainer'
-import { importTrainers } from '../core/TrainerImporter'
-import { Carousel } from './Carousel'
+import type {ReactElement} from 'react'
+import {useEffect, useMemo, useState} from 'react'
+import {useTranslation} from 'react-i18next'
+import {useSearchParams} from 'react-router-dom'
+import type {Trainer} from '../core/Trainer'
+import {importTrainers} from '../core/TrainerImporter'
+import {Carousel} from './Carousel'
 import Footer from './Footer'
 
 const allTrainers = importTrainers()
 
 export function HomePage(): ReactElement {
-  const { t } = useTranslation()
+  const {t} = useTranslation()
   const [searchParams] = useSearchParams()
   const [clean, setClean] = useState(true)
   const [trainerFilter, setTrainerFilter] = useState<string | undefined>(
@@ -22,7 +22,7 @@ export function HomePage(): ReactElement {
       (trainer: Trainer) =>
         trainerFilter == undefined ||
         trainer.name.toLowerCase() === trainerFilter.toLowerCase(),
-    )
+    ).filter((trainer: Trainer) => trainer.isActive)
   }, [trainerFilter])
 
   useEffect(() => {
