@@ -6,6 +6,7 @@ import type { Trainer } from './Trainer'
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
   isSubscriber?: boolean
+  isActive?: boolean
   name: string
   spriteUrl?: string
   team: string[]
@@ -29,6 +30,7 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
     title: trainerJson.title,
     theme: trainerJson.theme,
     team: trainerJson.team.map(importPokemon),
+    isActive: trainerJson.isActive ?? false
   }
 }
 
