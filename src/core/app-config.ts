@@ -5,5 +5,5 @@ interface AppConfig {
 
 export const APP_CONFIG: AppConfig = Object.freeze({
   removeFairyType: true,
-  timeStep: 15000,
+  timeStep: 2000,
 })

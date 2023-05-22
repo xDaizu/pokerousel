@@ -13,7 +13,12 @@
             "Marill",
             "Pikachu"
         ],
-        "spriteUrl": "lolochaa.png"
+        "spriteUrl": "lolochaa.png",
+        "stats": {
+            "pp": 5,
+            "cp": 4,
+            "hp": 2
+        }
     },
     {
         "name": "DannyEven",
@@ -29,7 +34,12 @@
             "Darumaka",
             "Hoothoot"
         ],
-        "spriteUrl": "dannyEven.png"
+        "spriteUrl": "dannyEven.png",
+        "stats": {
+            "pp": 5,
+            "cp": 4,
+            "hp": 3
+        }
     },
     {
         "name": "Jedifriki",
@@ -45,7 +55,12 @@
             "Aron",
             "Pichu"
         ],
-        "spriteUrl": "jedifriki.png"
+        "spriteUrl": "jedifriki.png",
+        "stats": {
+            "pp": 5,
+            "cp": 3,
+            "hp": 1
+        }
     },
     {
         "name": "Alimufking",
@@ -59,7 +74,12 @@
             "Torchic",
             "Camerupt"
         ],
-        "spriteUrl": "alimufking.png"
+        "spriteUrl": "alimufking.png",
+        "stats": {
+            "pp": 3,
+            "cp": 1,
+            "hp": 1
+        }
     },
     {
         "name": "JosephBidenJr",
@@ -87,7 +107,8 @@
             "Solosis",
             "Natu"
         ],
-        "spriteUrl": "juancito.png"
+        "spriteUrl": "juancito.png",
+        "stats": { "pp": 5,"cp":3,"hp":2}
     },
     {
         "name": "NimyMP",
@@ -115,7 +136,12 @@
         "team": [
             "Miltank"
         ],
-        "spriteUrl": "manuchi.png"
+        "spriteUrl": "manuchi.png",
+        "stats": {
+            "pp": 5,
+            "cp": 4,
+            "hp": 3
+        }
     },
     {
         "name": "Andresito",
@@ -169,7 +195,12 @@
             "Liepard",
             "Skitty"
         ],
-        "spriteUrl": "felinakyle.png"
+        "spriteUrl": "felinakyle.png",
+        "stats": {
+            "pp": 5,
+            "cp": 4,
+            "hp": 3
+        }
     },
     {
         "name": "Stormnvy",
@@ -182,13 +213,19 @@
             "Leafeon",
             "Eevee"
         ],
-        "spriteUrl": "stormnvy.png"
+        "spriteUrl": "stormnvy.png",
+        "stats": {
+            "pp": 4,
+            "cp": 3,
+            "hp": 2
+        }
     },
     {
         "name": "Tulka",
         "title": "Spec-ops",
         "theme": "pokemon usados militarmente",
         "isSubscriber": true,
+        "isActive": false,
         "team": [
             "Beldum",
             "Pawniard"

@@ -2,6 +2,7 @@ import data from '../../data/trainer_data.json'
 import { findByName } from './Pokedex'
 import type { Pokemon } from './Pokemon'
 import type { Trainer } from './Trainer'
+import {Stats} from "./Stats";
 
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
@@ -12,6 +13,7 @@ type TrainerJson = {
   team: string[]
   theme: string
   title: string
+  stats?: Stats
 }
 
 export function importTrainers(): Trainer[] {
@@ -30,7 +32,12 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
     title: trainerJson.title,
     theme: trainerJson.theme,
     team: trainerJson.team.map(importPokemon),
-    isActive: trainerJson.isActive ?? false
+    isActive: trainerJson.isActive ?? false,
+    stats: {
+      pp: trainerJson?.stats?.pp,
+      hp: trainerJson?.stats?.hp,
+      cp: trainerJson?.stats?.cp,
+    }
   }
 }
 
