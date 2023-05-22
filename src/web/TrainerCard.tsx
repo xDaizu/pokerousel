@@ -1,6 +1,7 @@
 import type {ReactElement} from 'react'
 import type {Pokemon} from '../core/Pokemon'
 import type {Trainer} from '../core/Trainer'
+import {APP_CONFIG} from "../core/app-config";
 
 interface TrainerCardProps {
   data: Trainer
@@ -32,16 +33,22 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
             <div className="basis-1/4">
               <ul className="font-retro text-white text-xl text-right px-4 align-middle relative">
                 <li className="columns-2 h-10">
-                  <img className="align-middle" src={`static/emoji/PP.png`}/>
-                  <div className="h-full align-text-bottom">{data.stats.pp??'-'}</div>
+                  <img className="align-middle" src={`static/emoji/PP.png`} />
+                  <div className={`h-full align-text-bottom ${(data.stats.pp ?? 0) >= APP_CONFIG.maxPP ? 'text-green-400' : ''}`}>{data.stats.pp ?? '-'}</div>
                 </li>
                 <li className="columns-2 h-10">
-                  <img className="align-middle" src={`static/emoji/CP.png`}/>
-                  <div className="h-full align-text-bottom">{data.stats.cp ?? '-'}</div>
+                  <img className="align-middle" src={`static/emoji/CP.png`} />
+                  <div
+                    className={`h-full align-text-bottom ${(data.stats.cp ?? 0) >= APP_CONFIG.maxCP ? 'text-green-400' : ''}`}>
+                    {data.stats.cp ?? '-'}
+                  </div>
                 </li>
                 <li className="columns-2 h-10">
-                  <img className="align-middle" src={`static/emoji/HP.png`}/>
-                  <div className="h-full align-text-bottom">{data.stats.hp??'-'}</div>
+                  <img className="align-middle" src={`static/emoji/HP.png`} />
+                  <div
+                    className={`h-full align-text-bottom ${(data.stats.hp ?? 0) >= APP_CONFIG.maxHP ? 'text-green-400' : ''}`}>
+                    {data.stats.hp ?? '-'}
+                  </div>
                 </li>
               </ul>
             </div>
