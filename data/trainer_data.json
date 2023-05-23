@@ -9,7 +9,7 @@
             "Minccino",
             "Cyndaquil",
             "Emolga",
-            "Bidoof",
+            "Bibarel",
             "Marill",
             "Pikachu"
         ],
@@ -29,7 +29,7 @@
         "team": [
             "Voltorb",
             "Jigglypuff",
-            "Marill",
+            "Koffing",
             "Mankey",
             "Darumaka",
             "Hoothoot"
@@ -97,18 +97,22 @@
         "title": "Verdemaniaco",
         "titlePosition": "after",
         "theme": "pokemon verdes",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "team": [
             "Grovyle",
-            "Ludicolo",
-            "Breloom",
+            "Gastrodon",
+            "Axew",
+            "Weavile",
             "Gallade",
-            "Solosis",
-            "Natu"
+            "Scyther"
         ],
         "spriteUrl": "juancito.png",
-        "stats": { "pp": 5,"cp":3,"hp":2}
+        "stats": {
+            "pp": 5,
+            "cp": 3,
+            "hp": 2
+        }
     },
     {
         "name": "NimyMP",
@@ -134,7 +138,8 @@
         "isActive": true,
         "theme": "pokemon que te alimentan",
         "team": [
-            "Miltank"
+            "Miltank",
+            "Tropius"
         ],
         "spriteUrl": "manuchi.png",
         "stats": {
@@ -288,6 +293,45 @@
         "isActive": true,
         "team": [
             "Furret"
+        ]
+    },
+    {
+        "name": "DroneRural",
+        "title": "Recluta",
+        "theme": "pokemon feos",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Trubbish"
+        ]
+    },
+    {
+        "name": "Cristy_Kamitsure",
+        "title": "Princesa de la Prestidigitación",
+        "theme": "pokemon sin piernas",
+        "isSubscriber": true,
+        "isActive": true,
+        "team": [
+            "Sigilyph",
+            "Seviper",
+            "Porygon-Z",
+            "Steelix",
+            "Kingdra"
+        ],
+        "stats": {
+            "pp": 1,
+            "cp": 1,
+            "hp": 1
+        }
+    },
+    {
+        "name": "XJaimeVGC",
+        "title": "Líder de la megaevolución",
+        "theme": "pokemon que podrían megaevolucionar",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Mudkip"
         ]
     }
 ]
