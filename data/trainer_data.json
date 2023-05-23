@@ -230,7 +230,7 @@
         "title": "Spec-ops",
         "theme": "pokemon usados militarmente",
         "isSubscriber": true,
-        "isActive": false,
+        "isActive": true,
         "team": [
             "Beldum",
             "Pawniard"
