@@ -272,6 +272,7 @@
         "title": "Fanático",
         "theme": "pokemon que llevaba Ash",
         "isSubscriber": false,
+        "isActive": true,
         "team": [
             "Pikachu"
         ]
