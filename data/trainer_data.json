@@ -186,6 +186,7 @@
         "theme": "pokemon reptiles",
         "isSubscriber": true,
         "isActive": true,
+        "spriteUrl": "rayzer.png",
         "team": [
             "Poliwhirl",
             "Krokorok",
