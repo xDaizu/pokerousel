@@ -350,6 +350,7 @@
         "theme": "restaurante pokemon",
         "isSubscriber": true,
         "isActive": true,
+        "spriteUrl": "vancleemp.png",
         "team": [
             "Combusken",
             "Kadabra",
