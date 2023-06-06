@@ -7,7 +7,7 @@
         "isActive": true,
         "team": [
             "Minccino",
-            "Cyndaquil",
+            "Sandslash",
             "Emolga",
             "Bibarel",
             "Marill",
@@ -125,10 +125,15 @@
     {
         "name": "Nighdream",
         "title": "Sombra andante",
-        "theme": "pokemon tipo siniestro",
+        "theme": "pokemon sin patas",
         "isActive": true,
         "team": [
-            "Zorua"
+            "Zoroark",
+            "Honchkrow",
+            "Absol",
+            "Deino",
+            "Sableye",
+            "Umbreon"
         ]
     },
     {
@@ -181,11 +186,12 @@
         "theme": "pokemon reptiles",
         "isActive": true,
         "team": [
-            "Poliwag",
-            "Ekans",
-            "Gible",
-            "Charmander",
-            "Sandile"
+            "Poliwhirl",
+            "Krokorok",
+            "Milotic",
+            "Arbok",
+            "Servine",
+            "Charmeleon"
         ]
     },
     {
@@ -215,8 +221,11 @@
         "isSubscriber": true,
         "team": [
             "Umbreon",
+            "Espeon",
             "Leafeon",
-            "Eevee"
+            "Jolteon",
+            "Vaporeon",
+            "Flareon"
         ],
         "spriteUrl": "stormnvy.png",
         "stats": {
@@ -334,5 +343,25 @@
         "team": [
             "Mudkip"
         ]
+    },
+    {
+        "name": "Vancleemp",
+        "title": "Chef",
+        "theme": "restaurante pokemon",
+        "isSubscriber": true,
+        "isActive": true,
+        "team": [
+            "Combusken",
+            "Kadabra",
+            "Azumarill",
+            "Dragonair",
+            "Meowth",
+            "Sneasel"
+        ],
+        "stats": {
+            "pp": 6,
+            "cp": 6,
+            "hp": 4
+        }
     }
 ]
