@@ -184,6 +184,7 @@
         "name": "Rayzer",
         "title": "Reptiliano",
         "theme": "pokemon reptiles",
+        "isSubscriber": true,
         "isActive": true,
         "team": [
             "Poliwhirl",
