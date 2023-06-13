@@ -14,11 +14,7 @@
             "Pikachu"
         ],
         "spriteUrl": "lolochaa.png",
-        "stats": {
-            "pp": 5,
-            "cp": 4,
-            "hp": 2
-        }
+        "stats": { "pp": 8,"cp":6,"hp":3}
     },
     {
         "name": "DannyEven",
@@ -35,11 +31,7 @@
             "Hoothoot"
         ],
         "spriteUrl": "dannyEven.png",
-        "stats": {
-            "pp": 5,
-            "cp": 4,
-            "hp": 3
-        }
+        "stats": { "pp": 8,"cp":6,"hp":5}
     },
     {
         "name": "Jedifriki",
@@ -49,18 +41,14 @@
         "isActive": true,
         "team": [
             "Ralts",
-            "Azurill",
+            "Marill",
             "Taillow",
             "Torchic",
             "Aron",
-            "Pichu"
+            "Minun"
         ],
         "spriteUrl": "jedifriki.png",
-        "stats": {
-            "pp": 5,
-            "cp": 3,
-            "hp": 1
-        }
+        "stats": { "pp": 8,"cp":4,"hp":2}
     },
     {
         "name": "Alimufking",
@@ -144,14 +132,11 @@
         "theme": "pokemon que te alimentan",
         "team": [
             "Miltank",
-            "Tropius"
+            "Tropius",
+            "Octillery"
         ],
         "spriteUrl": "manuchi.png",
-        "stats": {
-            "pp": 5,
-            "cp": 4,
-            "hp": 3
-        }
+        "stats": { "pp": 8,"cp":6,"hp":5}
     },
     {
         "name": "Andresito",
@@ -188,12 +173,12 @@
         "isActive": true,
         "spriteUrl": "rayzer.png",
         "team": [
-            "Poliwhirl",
-            "Krokorok",
-            "Milotic",
+            "Poliwrath",
             "Arbok",
-            "Servine",
-            "Charmeleon"
+            "Milotic",
+            "Serperior",
+            "Gabite",
+            "Archeops"
         ]
     },
     {
@@ -209,11 +194,7 @@
             "Skitty"
         ],
         "spriteUrl": "felinakyle.png",
-        "stats": {
-            "pp": 5,
-            "cp": 4,
-            "hp": 3
-        }
+        "stats": { "pp": 8,"cp":7,"hp":5}
     },
     {
         "name": "Stormnvy",
@@ -230,11 +211,7 @@
             "Flareon"
         ],
         "spriteUrl": "stormnvy.png",
-        "stats": {
-            "pp": 4,
-            "cp": 3,
-            "hp": 2
-        }
+        "stats": { "pp": 7,"cp":5,"hp":4}
     },
     {
         "name": "Tulka",
@@ -285,7 +262,12 @@
         "isSubscriber": false,
         "isActive": true,
         "team": [
-            "Pikachu"
+            "Pikachu",
+            "Swellow",
+            "Snorlax",
+            "Lucario",
+            "Infernape",
+            "Charizard"
         ]
     },
     {
@@ -330,11 +312,7 @@
             "Steelix",
             "Kingdra"
         ],
-        "stats": {
-            "pp": 1,
-            "cp": 1,
-            "hp": 1
-        }
+        "stats": { "pp": 3,"cp":3,"hp":3}
     },
     {
         "name": "XJaimeVGC",
@@ -361,10 +339,6 @@
             "Meowth",
             "Sneasel"
         ],
-        "stats": {
-            "pp": 6,
-            "cp": 6,
-            "hp": 4
-        }
+        "stats": { "pp": 8,"cp":7,"hp":4}
     }
 ]
