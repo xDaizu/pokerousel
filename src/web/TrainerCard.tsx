@@ -50,7 +50,7 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
             </div>
             <div className="w-12 flex flex-row h-full max-h-full">
               <img
-                className="h-full max-h-full object-cover"
+                className="h-full max-h-full object-contain w-full"
                 src={iconSrc}
                 alt=""
               />
