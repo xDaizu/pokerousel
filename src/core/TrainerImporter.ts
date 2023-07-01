@@ -33,7 +33,7 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
     title: trainerJson.title,
     theme: trainerJson.theme,
     team: trainerJson.team.map(importPokemon),
-    isActive: trainerJson.isActive ?? false,
+    isActive: trainerJson.isActive ?? true,
     stats: {
       pp: trainerJson?.stats?.pp,
       hp: trainerJson?.stats?.hp,
