@@ -10,9 +10,25 @@ interface TrainerCardProps {
 const DEFAULT_TRAINER_IMAGE = 'blank.png'
 
 export function TrainerCard({data}: TrainerCardProps): ReactElement {
+  const affiliation = data.affiliation ?? 'neutral';
+
+  const borderBgColor =
+    affiliation === 'HYL' ? 'bg-amber-400' :
+      affiliation === 'HDL' ? 'bg-violet-400' :
+        'bg-zinc-900';
+  const cardBgColor =
+    affiliation === 'HYL' ? 'bg-sky-800' :
+      affiliation === 'HDL' ? 'bg-violet-900' :
+        'bg-zinc-500';
+
+  const iconSrc =
+    affiliation === 'HYL' ? 'static/icons/HYL-loyal.png' :
+      affiliation === 'HDL' ? 'static/icons/HDL.png' :
+        'static/icons/HYL-neutral.png';
+
   return (
-    <div className="bg-zinc-400 max-h-60 h-60 flex p-1 max-w-xl flex-col justify-center">
-      <div className="p-2 bg-zinc-800 max-h-full h-full flex rounded-xl max-w-xl">
+    <div className={`${borderBgColor} max-h-60 h-60 flex p-1 max-w-xl flex-col justify-center`}>
+      <div className={`p-2 ${cardBgColor} max-h-full h-full flex rounded-xl w-full`}>
         <div className="w-36 flex justify-items-center overflow-hidden no-flex">
           <img
             className="h-full max-h-full object-cover"
@@ -20,14 +36,25 @@ export function TrainerCard({data}: TrainerCardProps): ReactElement {
             alt=""
           />
         </div>
-        <div className="pt-1 h-full max-h-full flex-1 flex flex-col">
-          <div className="w-full no-flex">
-            <h3 className="font-retro text-white">
-              {data.title} {data.name}
-            </h3>
-          </div>
-          <div className="pl-4 pb-2 w-full no-flex">
-            <h3 className="font-retro text-yellow-200 text-sm">{data.theme}</h3>
+        <div className="flex flex-1 flex-col h-full max-h-full">
+          <div className="pt-1 h-full max-h-full flex-1 flex flex-row">
+            <div className="flex-1 no-flex">
+              <div className="w-full no-flex">
+                <h3 className="font-retro text-white">
+                  {data.title} {data.name}
+                </h3>
+              </div>
+              <div className="pl-4 pb-2 w-full no-flex">
+                <h3 className="font-retro text-yellow-200 text-sm">{data.theme}</h3>
+              </div>
+            </div>
+            <div className="w-12 flex flex-row h-full max-h-full">
+              <img
+                className="h-full max-h-full object-cover"
+                src={iconSrc}
+                alt=""
+              />
+            </div>
           </div>
           <div className="w-full flex flex-row h-full max-h-full">
             <div className="basis-1/4">

@@ -10,4 +10,5 @@ export interface Trainer {
   stats: Stats
   theme: string
   title: string
+  affiliation: string
 }
