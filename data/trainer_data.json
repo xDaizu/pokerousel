@@ -1,6 +1,7 @@
 [
     {
         "name": "Lolocha",
+        "twitchAlias": "lolochaa",
         "title": "Niña rata",
         "theme": "pokemon roedor",
         "isSubscriber": true,
@@ -14,10 +15,12 @@
             "Pikachu"
         ],
         "spriteUrl": "lolochaa.png",
-        "stats": { "pp": 8,"cp":6,"hp":3}
+        "stats": { "pp": 8,"cp":6,"hp":3},
+        "affiliation": "HYL"
     },
     {
         "name": "DannyEven",
+        "twitchAlias": "dannyeven",
         "title": "Boludo",
         "theme": "pokemon esfericos",
         "isSubscriber": true,
@@ -31,10 +34,12 @@
             "Hoothoot"
         ],
         "spriteUrl": "dannyEven.png",
-        "stats": { "pp": 8,"cp":6,"hp":5}
+        "stats": { "pp": 8,"cp":6,"hp":5},
+        "affiliation": "HYL"
     },
     {
         "name": "Jedifriki",
+        "twitchAlias": "jedifriki",
         "title": "Mando Padrazo",
         "theme": "pokemon monos, peques y adorables",
         "isSubscriber": true,
@@ -52,10 +57,11 @@
     },
     {
         "name": "Alimufking",
+        "twitchAlias": "alimufking",
         "title": "Pirómano",
         "theme": "pkmn de corazon ardiente",
-        "isSubscriber": true,
-        "isActive": true,
+        "isSubscriber": false,
+        "isActive": false,
         "team": [
             "Charmander",
             "Litwick",
@@ -74,7 +80,7 @@
         "title": "Arqueólogo",
         "theme": "pokemon fósiles",
         "isSubscriber": false,
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Aerodactyl"
         ],
@@ -85,15 +91,15 @@
         "title": "Verdemaniaco",
         "titlePosition": "after",
         "theme": "pokemon verdes",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "team": [
-            "Grovyle",
-            "Gastrodon",
-            "Axew",
-            "Weavile",
+            "Sceptile",
             "Gallade",
-            "Scyther"
+            "Axew",
+            "Gastrodon",
+            "Scyther",
+            "Weavile"
         ],
         "spriteUrl": "juancito.png",
         "stats": {
@@ -106,23 +112,26 @@
         "name": "NimyMP",
         "title": "Amigo de los caninos",
         "theme": "pokemon caninos",
+        "isActive": true,
         "team": [
             "Growlithe"
         ]
     },
     {
-        "name": "Nighdream",
+        "name": "Nightdream",
         "title": "Sombra andante",
         "theme": "pokemon sin patas",
         "isActive": true,
+        "isSubscriber": true,
         "team": [
             "Zoroark",
-            "Honchkrow",
-            "Absol",
-            "Deino",
             "Sableye",
+            "Krokorok",
+            "Absol",
+            "Honchkrow",
             "Umbreon"
-        ]
+        ],
+        "affiliation": "HDL"
     },
     {
         "name": "Manuchi",
@@ -161,6 +170,7 @@
         "name": "Rodra",
         "title": "Chico edgy",
         "theme": "pokemon populares",
+        "isActive": false,
         "team": [
             "Gastly"
         ]
@@ -194,7 +204,8 @@
             "Skitty"
         ],
         "spriteUrl": "felinakyle.png",
-        "stats": { "pp": 8,"cp":7,"hp":5}
+        "stats": { "pp": 8,"cp":7,"hp":5},
+        "affiliation": "HYL"
     },
     {
         "name": "Stormnvy",
@@ -211,7 +222,8 @@
             "Flareon"
         ],
         "spriteUrl": "stormnvy.png",
-        "stats": { "pp": 7,"cp":5,"hp":4}
+        "stats": { "pp": 7,"cp":5,"hp":4},
+        "affiliation": "HYL"
     },
     {
         "name": "Tulka",
@@ -229,7 +241,7 @@
         "name": "LordDarksito",
         "title": "Señor Oscurito",
         "theme": "pokemon negros o de la oscuridad",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "team": [
             "Beldum",
             "Pawniard"
@@ -259,16 +271,28 @@
         "name": "Ash",
         "title": "Fanático",
         "theme": "pokemon que llevaba Ash",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "team": [
             "Pikachu",
-            "Swellow",
+            "Torterra",
+            "Lapras",
+            "Charizard",
             "Snorlax",
-            "Lucario",
-            "Infernape",
-            "Charizard"
-        ]
+            "Lucario"
+        ],
+        "affiliation": "HYL"
+    },
+    {
+        "name": "Blue",
+        "title": "Fanático",
+        "theme": "pokemon que llevaba Blue",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Venusaur"
+        ],
+        "affiliation": "HYL"
     },
     {
         "name": "Joacoool",
@@ -312,7 +336,8 @@
             "Steelix",
             "Kingdra"
         ],
-        "stats": { "pp": 3,"cp":3,"hp":3}
+        "stats": { "pp": 3,"cp":3,"hp":3},
+        "affiliation": "HDL"
     },
     {
         "name": "XJaimeVGC",
@@ -328,17 +353,43 @@
         "name": "Vancleemp",
         "title": "Chef",
         "theme": "restaurante pokemon",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "spriteUrl": "vancleemp.png",
         "team": [
-            "Combusken",
-            "Kadabra",
+            "Blaziken",
+            "Alakazam",
             "Azumarill",
             "Dragonair",
             "Meowth",
             "Sneasel"
         ],
         "stats": { "pp": 8,"cp":7,"hp":4}
+    },
+    {
+        "name": "DoroxAPPLELY",
+        "title": "El tóxico",
+        "theme": "pokémon venenosos... y bronzor",
+        "isSubscriber": true,
+        "isActive": true,
+        "team": [
+            "Bronzong",
+            "Tentacruel",
+            "Crobat",
+            "Skuntank",
+            "Weezing",
+            "Roserade"
+        ],
+        "affiliation": "HYL"
+    },
+    {
+        "name": "Toxic_Doraemon",
+        "title": "Ninja",
+        "theme": "ninjas y cultura shogun",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Slakoth"
+        ]
     }
 ]
