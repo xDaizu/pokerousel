@@ -312,7 +312,8 @@
         "isActive": true,
         "team": [
             "Furret"
-        ]
+        ],
+        "affiliation":"HYL"
     },
     {
         "name": "DroneRural",
@@ -348,7 +349,8 @@
         "isActive": true,
         "team": [
             "Mudkip"
-        ]
+        ],
+        "affiliation":"HDL"
     },
     {
         "name": "Vancleemp",
