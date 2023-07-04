@@ -53,7 +53,8 @@
             "Minun"
         ],
         "spriteUrl": "jedifriki.png",
-        "stats": { "pp": 8,"cp":4,"hp":2}
+        "stats": { "pp": 8,"cp":4,"hp":2},
+        "affiliation":"HYL"
     },
     {
         "name": "Alimufking",
