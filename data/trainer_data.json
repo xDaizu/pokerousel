@@ -123,7 +123,7 @@
         "title": "Sombra andante",
         "theme": "pokemon siniestros",
         "isActive": true,
-        "isSubscriber": true,
+        "isSubscriber": false,
         "team": [
             "Zoroark",
             "Sableye",
@@ -180,7 +180,7 @@
         "name": "Rayzer",
         "title": "Reptiliano",
         "theme": "pokemon reptiles",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "spriteUrl": "rayzer.png",
         "team": [
@@ -196,7 +196,7 @@
         "name": "Felina Kyle",
         "title": "Miauestra",
         "theme": "pokemon feliformes",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "team": [
             "Espeon",
@@ -320,7 +320,7 @@
         "title": "Recluta",
         "theme": "pokemon feos",
         "isSubscriber": false,
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Trubbish"
         ]
@@ -329,7 +329,7 @@
         "name": "Cristy_Kamitsure",
         "title": "Princesa de la Prestidigitación",
         "theme": "pokemon sin patas",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "team": [
             "Sigilyph",
@@ -375,6 +375,7 @@
         "theme": "pokémon venenosos... y bronzor",
         "isSubscriber": true,
         "isActive": true,
+        "spriteUrl": "dorox.png",
         "team": [
             "Bronzong",
             "Tentacruel",
