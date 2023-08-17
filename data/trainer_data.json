@@ -7,12 +7,12 @@
         "isSubscriber": true,
         "isActive": true,
         "team": [
-            "Minccino",
+            "Cinccino",
             "Sandslash",
-            "Emolga",
+            "Nidoqueen",
             "Bibarel",
-            "Marill",
-            "Pikachu"
+            "Raichu",
+            "Emolga"
         ],
         "spriteUrl": "lolochaa.png",
         "stats": { "pp": 8,"cp":6,"hp":3},
@@ -26,12 +26,12 @@
         "isSubscriber": true,
         "isActive": true,
         "team": [
-            "Voltorb",
-            "Jigglypuff",
-            "Koffing",
-            "Mankey",
-            "Darumaka",
-            "Hoothoot"
+            "Electrode",
+            "Golem",
+            "Sigilyph",
+            "Forretress",
+            "Weezing",
+            "Poliwrath"
         ],
         "spriteUrl": "dannyEven.png",
         "stats": { "pp": 8,"cp":6,"hp":5},
@@ -92,28 +92,29 @@
         "title": "Verdemaniaco",
         "titlePosition": "after",
         "theme": "pokemon verdes",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "team": [
             "Sceptile",
             "Gallade",
-            "Axew",
+            "Flygon",
+            "Reuniclus",
             "Gastrodon",
-            "Scyther",
-            "Weavile"
+            "Abomasnow"
         ],
         "spriteUrl": "juancito.png",
         "stats": {
             "pp": 5,
             "cp": 3,
             "hp": 2
-        }
+        },
+        "affiliation": "HDL"
     },
     {
         "name": "NimyMP",
         "title": "Amigo de los caninos",
         "theme": "pokemon caninos",
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Growlithe"
         ]
@@ -146,13 +147,14 @@
             "Octillery"
         ],
         "spriteUrl": "manuchi.png",
-        "stats": { "pp": 8,"cp":6,"hp":5}
+        "stats": { "pp": 8,"cp":6,"hp":5},
+        "affiliation": "HYL"
     },
     {
         "name": "Andresito",
         "title": "Apapachable",
         "theme": "pokemon hadas gorditas rosas apapachables",
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Happiny"
         ]
@@ -161,6 +163,7 @@
         "name": "Lobo",
         "title": "Nakama",
         "theme": "pokemon populares",
+        "isActive": false,
         "team": [
             "Charmander",
             "Deino",
@@ -180,7 +183,7 @@
         "name": "Rayzer",
         "title": "Reptiliano",
         "theme": "pokemon reptiles",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "spriteUrl": "rayzer.png",
         "team": [
@@ -188,20 +191,23 @@
             "Arbok",
             "Milotic",
             "Serperior",
-            "Gabite",
+            "Garchomp",
             "Archeops"
-        ]
+        ],
+        "affiliation": "HYL"
     },
     {
         "name": "Felina Kyle",
         "title": "Miauestra",
         "theme": "pokemon feliformes",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "team": [
             "Espeon",
             "Luxio",
             "Liepard",
+            "Meowth",
+            "Zangoose",
             "Skitty"
         ],
         "spriteUrl": "felinakyle.png",
@@ -253,7 +259,7 @@
         "title": "Sonrisa colmillo",
         "theme": "pkmn con sonrisa que enseñe el colmillo",
         "isSubscriber": false,
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Aerodactyl"
         ]
@@ -263,7 +269,7 @@
         "title": "Protector de dragones",
         "theme": "pokemon dragón",
         "isSubscriber": false,
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Gible"
         ]
@@ -282,14 +288,15 @@
             "Snorlax",
             "Lucario"
         ],
-        "affiliation": "HDL"
+        "affiliation": "HDL",
+        "spriteUrl": "fanatico-ash.png"
     },
     {
         "name": "Blue",
         "title": "Fanático",
         "theme": "pokemon que llevaba Blue",
         "isSubscriber": false,
-        "isActive": true,
+        "isActive": false,
         "team": [
             "Venusaur"
         ],
@@ -325,22 +332,7 @@
             "Trubbish"
         ]
     },
-    {
-        "name": "Cristy_Kamitsure",
-        "title": "Princesa de la Prestidigitación",
-        "theme": "pokemon sin patas",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Sigilyph",
-            "Seviper",
-            "Porygon-Z",
-            "Steelix",
-            "Kingdra"
-        ],
-        "stats": { "pp": 3,"cp":3,"hp":3},
-        "affiliation": "HDL"
-    },
+
     {
         "name": "XJaimeVGC",
         "title": "Líder de la megaevolución",
@@ -367,7 +359,8 @@
             "Meowth",
             "Sneasel"
         ],
-        "stats": { "pp": 8,"cp":7,"hp":4}
+        "stats": { "pp": 8,"cp":7,"hp":4},
+        "affiliation": "HYL"
     },
     {
         "name": "DoroxAPPLELY",
@@ -394,6 +387,93 @@
         "isActive": true,
         "team": [
             "Slakoth"
+        ]
+    },
+    {
+        "name": "Cristy_Kamitsure",
+        "title": "Princesa de la Prestidigitación",
+        "theme": "pokemon sin patas",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Sigilyph",
+            "Seviper",
+            "Porygon-Z",
+            "Steelix",
+            "Kingdra"
+        ],
+        "stats": { "pp": 3,"cp":3,"hp":3},
+        "affiliation": "HDL"
+    },
+    {
+        "name": "ItsRazorMorel",
+        "title": "El fugaz",
+        "theme": "pokemon cuadrúpedos",
+        "isSubscriber": true,
+        "isActive": true,
+        "team": [
+            "Bulbasaur"
+        ],
+        "affiliation": "HYL"
+    },
+    {
+        "name": "MsKatty",
+        "title": "Iniciado",
+        "theme": "pokemon iniciales",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Mudkip"
+        ]
+    },
+    {
+        "name": "Kexior",
+        "title": "Corazon de acero",
+        "theme": "pokemon de acero",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Magnemite"
+        ]
+    },
+    {
+        "name": "Rool",
+        "title": "Piloto",
+        "theme": "pokemon ave",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Torchic"
+        ]
+    },
+    {
+        "name": "MarceRocket",
+        "title": "Errante",
+        "theme": "pokemon del team rocket",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Meowth"
+        ]
+    },
+    {
+        "name": "Ismayo",
+        "title": "DomaMonstruos",
+        "theme": "pokemon de huevo monstruo",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Treecko"
+        ]
+    },
+    {
+        "name": "jhosepryt",
+        "title": "herrante",
+        "theme": "pokemon elementales",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Volcarona"
         ]
     }
 ]
