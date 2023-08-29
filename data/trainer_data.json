@@ -278,7 +278,7 @@
         "name": "Ash",
         "title": "Fanático",
         "theme": "pokemon que llevaba Ash",
-        "isSubscriber": true,
+        "isSubscriber": false,
         "isActive": true,
         "team": [
             "Pikachu",
@@ -412,7 +412,13 @@
         "isSubscriber": true,
         "isActive": true,
         "team": [
-            "Bulbasaur"
+            "Venusaur",
+            "Crawdaunt",
+            "Machamp",
+            "Altaria",
+            "Typhlosion",
+            "Swampert"
+
         ],
         "affiliation": "HYL"
     },
@@ -469,11 +475,21 @@
     {
         "name": "jhosepryt",
         "title": "herrante",
-        "theme": "pokemon elementales",
+        "theme": "pokemon bicho",
         "isSubscriber": false,
         "isActive": true,
         "team": [
             "Volcarona"
+        ]
+    },
+    {
+        "name": "LillieSun",
+        "title": "La domadora",
+        "theme": "pokemon elegantes",
+        "isSubscriber": false,
+        "isActive": true,
+        "team": [
+            "Mawile"
         ]
     }
 ]
