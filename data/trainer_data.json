@@ -46,11 +46,11 @@
         "isActive": true,
         "team": [
             "Ralts",
-            "Marill",
-            "Taillow",
-            "Torchic",
+            "Elekid",
             "Aron",
-            "Minun"
+            "Magby",
+            "Munchlax",
+            "Squirtle"
         ],
         "spriteUrl": "jedifriki.png",
         "stats": { "pp": 8,"cp":4,"hp":2},
@@ -144,7 +144,8 @@
         "team": [
             "Miltank",
             "Tropius",
-            "Octillery"
+            "Octillery",
+            "Blissey"
         ],
         "spriteUrl": "manuchi.png",
         "stats": { "pp": 8,"cp":6,"hp":5},
@@ -348,7 +349,7 @@
         "name": "Vancleemp",
         "title": "Chef",
         "theme": "restaurante pokemon",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "spriteUrl": "vancleemp.png",
         "team": [
@@ -383,7 +384,7 @@
         "name": "Toxic_Doraemon",
         "title": "Ninja",
         "theme": "ninjas y cultura shogun",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "team": [
             "Slakoth"
@@ -486,10 +487,22 @@
         "name": "LillieSun",
         "title": "La domadora",
         "theme": "pokemon elegantes",
-        "isSubscriber": false,
+        "isSubscriber": true,
         "isActive": true,
         "team": [
-            "Mawile"
+            "Mawile",
+            "Espeon",
+            "Milotic"
+        ]
+    },
+    {
+        "name": "Geranio",
+        "title": "spiquico",
+        "theme": "pokemon elegantes",
+        "isSubscriber": true,
+        "isActive": false,
+        "team": [
+            "Abra"
         ]
     }
 ]
