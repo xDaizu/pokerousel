@@ -15,6 +15,7 @@ type TrainerJson = {
   title: string
   stats?: Stats
   affiliation?: string
+  isTournament?: boolean
 }
 
 export function importTrainers(): Trainer[] {
@@ -39,7 +40,8 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
       hp: trainerJson?.stats?.hp,
       cp: trainerJson?.stats?.cp,
     },
-    affiliation: trainerJson.affiliation ?? 'none',
+    affiliation: trainerJson.affiliation ?? 'HYL',
+    isTournament: trainerJson.isTournament ?? false
   }
 }
 

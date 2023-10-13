@@ -6,16 +6,21 @@
         "theme": "pokemon roedor",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Cinccino",
-            "Sandslash",
+            "Emolga",
             "Nidoqueen",
-            "Bibarel",
+            "Sandslash",
             "Raichu",
-            "Emolga"
+            "Nidoking"
         ],
         "spriteUrl": "lolochaa.png",
-        "stats": { "pp": 8,"cp":6,"hp":3},
+        "stats": {
+            "pp": 8,
+            "cp": 6,
+            "hp": 3
+        },
         "affiliation": "HYL"
     },
     {
@@ -25,16 +30,21 @@
         "theme": "pokemon esfericos",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Electrode",
-            "Golem",
+            "Mamoswine",
             "Sigilyph",
             "Forretress",
-            "Weezing",
+            "Darmanitan",
             "Poliwrath"
         ],
         "spriteUrl": "dannyEven.png",
-        "stats": { "pp": 8,"cp":6,"hp":5},
+        "stats": {
+            "pp": 8,
+            "cp": 6,
+            "hp": 5
+        },
         "affiliation": "HYL"
     },
     {
@@ -44,6 +54,7 @@
         "theme": "pokemon monos, peques y adorables",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Ralts",
             "Elekid",
@@ -53,8 +64,12 @@
             "Squirtle"
         ],
         "spriteUrl": "jedifriki.png",
-        "stats": { "pp": 8,"cp":4,"hp":2},
-        "affiliation":"HYL"
+        "stats": {
+            "pp": 8,
+            "cp": 4,
+            "hp": 2
+        },
+        "affiliation": "HYL"
     },
     {
         "name": "Alimufking",
@@ -94,11 +109,12 @@
         "theme": "pokemon verdes",
         "isSubscriber": false,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Sceptile",
             "Gallade",
             "Flygon",
-            "Reuniclus",
+            "Gardevoir",
             "Gastrodon",
             "Abomasnow"
         ],
@@ -114,9 +130,15 @@
         "name": "NimyMP",
         "title": "Amigo de los caninos",
         "theme": "pokemon caninos",
-        "isActive": false,
+        "isActive": true,
+        "isTournament": true,
         "team": [
-            "Growlithe"
+            "Arcanine",
+            "Granbull",
+            "Smeargle",
+            "Mightyena",
+            "Manectric",
+            "Stoutland"
         ]
     },
     {
@@ -125,12 +147,13 @@
         "theme": "pokemon siniestros",
         "isActive": true,
         "isSubscriber": false,
+        "isTournament": true,
         "team": [
             "Zoroark",
-            "Sableye",
-            "Krokorok",
-            "Absol",
-            "Honchkrow",
+            "Hydreigon",
+            "Krookodile",
+            "Mandibuzz",
+            "Spiritomb",
             "Umbreon"
         ],
         "affiliation": "HDL"
@@ -140,15 +163,22 @@
         "title": "Zampabollos",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "theme": "pokemon que te alimentan",
         "team": [
             "Miltank",
             "Tropius",
             "Octillery",
-            "Blissey"
+            "Blissey",
+            "Vanilluxe",
+            "Amoonguss"
         ],
         "spriteUrl": "manuchi.png",
-        "stats": { "pp": 8,"cp":6,"hp":5},
+        "stats": {
+            "pp": 8,
+            "cp": 6,
+            "hp": 5
+        },
         "affiliation": "HYL"
     },
     {
@@ -183,16 +213,17 @@
     {
         "name": "Rayzer",
         "title": "Reptiliano",
-        "theme": "pokemon reptiles",
+        "theme": "pokemon reptiles y anfibios",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "spriteUrl": "rayzer.png",
         "team": [
             "Poliwrath",
-            "Arbok",
+            "Politoed",
+            "Dragonite",
             "Milotic",
             "Serperior",
-            "Garchomp",
             "Archeops"
         ],
         "affiliation": "HYL"
@@ -212,7 +243,11 @@
             "Skitty"
         ],
         "spriteUrl": "felinakyle.png",
-        "stats": { "pp": 8,"cp":7,"hp":5},
+        "stats": {
+            "pp": 8,
+            "cp": 7,
+            "hp": 5
+        },
         "affiliation": "HYL"
     },
     {
@@ -230,7 +265,11 @@
             "Flareon"
         ],
         "spriteUrl": "stormnvy.png",
-        "stats": { "pp": 7,"cp":5,"hp":4},
+        "stats": {
+            "pp": 7,
+            "cp": 5,
+            "hp": 4
+        },
         "affiliation": "HYL"
     },
     {
@@ -321,7 +360,7 @@
         "team": [
             "Furret"
         ],
-        "affiliation":"HYL"
+        "affiliation": "HYL"
     },
     {
         "name": "DroneRural",
@@ -333,17 +372,22 @@
             "Trubbish"
         ]
     },
-
     {
         "name": "XJaimeVGC",
         "title": "Líder de la megaevolución",
         "theme": "pokemon que podrían megaevolucionar",
         "isSubscriber": false,
         "isActive": true,
+        "isTournament": true,
         "team": [
-            "Mudkip"
+            "Swampert",
+            "Gengar",
+            "Gallade",
+            "Manectric",
+            "Scizor",
+            "Slowbro"
         ],
-        "affiliation":"HDL"
+        "affiliation": "HDL"
     },
     {
         "name": "Vancleemp",
@@ -351,16 +395,21 @@
         "theme": "restaurante pokemon",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "spriteUrl": "vancleemp.png",
         "team": [
             "Blaziken",
-            "Alakazam",
-            "Azumarill",
-            "Dragonair",
             "Meowth",
-            "Sneasel"
+            "Alakazam",
+            "Dragonite",
+            "Azumarill",
+            "Weavile"
         ],
-        "stats": { "pp": 8,"cp":7,"hp":4},
+        "stats": {
+            "pp": 8,
+            "cp": 7,
+            "hp": 4
+        },
         "affiliation": "HYL"
     },
     {
@@ -369,14 +418,15 @@
         "theme": "pokémon venenosos... y bronzor",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "spriteUrl": "dorox.png",
         "team": [
             "Bronzong",
-            "Tentacruel",
-            "Crobat",
-            "Skuntank",
+            "Amoonguss",
+            "Nidoking",
             "Weezing",
-            "Roserade"
+            "Skuntank",
+            "Tentacruel"
         ],
         "affiliation": "HYL"
     },
@@ -403,7 +453,11 @@
             "Steelix",
             "Kingdra"
         ],
-        "stats": { "pp": 3,"cp":3,"hp":3},
+        "stats": {
+            "pp": 3,
+            "cp": 3,
+            "hp": 3
+        },
         "affiliation": "HDL"
     },
     {
@@ -412,14 +466,14 @@
         "theme": "pokemon cuadrúpedos",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Venusaur",
-            "Crawdaunt",
             "Machamp",
+            "Crawdaunt",
             "Altaria",
-            "Typhlosion",
-            "Swampert"
-
+            "Swampert",
+            "Typhlosion"
         ],
         "affiliation": "HYL"
     },
@@ -479,8 +533,14 @@
         "theme": "pokemon bicho",
         "isSubscriber": false,
         "isActive": true,
+        "isTournament": true,
         "team": [
-            "Volcarona"
+            "Volcarona",
+            "Gliscor",
+            "Crustle",
+            "Scizor",
+            "Flygon",
+            "Galvantula"
         ]
     },
     {
@@ -489,20 +549,30 @@
         "theme": "pokemon elegantes",
         "isSubscriber": true,
         "isActive": true,
+        "isTournament": true,
         "team": [
             "Mawile",
             "Espeon",
-            "Milotic"
+            "Milotic",
+            "Shaymin",
+            "Stoutland",
+            "Jellicent"
         ]
     },
     {
         "name": "Geranio",
         "title": "spiquico",
-        "theme": "pokemon elegantes",
+        "theme": "pokemon psíquicos",
         "isSubscriber": true,
-        "isActive": false,
+        "isActive": true,
+        "isTournament": true,
         "team": [
-            "Abra"
+            "Golduck",
+            "Medicham",
+            "Gothitelle",
+            "Metagross",
+            "Espeon",
+            "Xatu"
         ]
     }
 ]
