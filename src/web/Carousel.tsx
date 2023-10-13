@@ -4,6 +4,7 @@ import { useMemo } from 'react'
 import type { Trainer } from '../core/Trainer'
 import { APP_CONFIG } from '../core/app-config'
 import { TrainerCard } from './TrainerCard'
+import { TournamentTrainerCard } from './TournamentTrainerCard'
 import { TrainerSimplifiedCard } from './TrainerSimplifiedCard'
 import { useTimedCyclicCounter } from './useTimedCyclicCounter'
 
@@ -16,6 +17,7 @@ export function Carousel({
   data,
   transitionTime,
 }: TrainerCardListProps): ReactElement {
+  const isTournament = APP_CONFIG.isTournament ?? false
   const subscriberTrainerCards = useMemo(() => {
     return data
       .filter((trainer: Trainer) => trainer.isSubscriber)
@@ -24,16 +26,25 @@ export function Carousel({
       ))
   }, [data])
 
+  const tournamentTrainerCards = useMemo(() => {
+    return data
+      .filter((trainer: Trainer) => trainer.isTournament)
+      .map((trainer: Trainer) => (
+        <TournamentTrainerCard data={trainer} key={trainer.name} />
+      ))
+  }, [data])
+
   const simpleCards = useMemo(() => {
     return buildSimplifiedCards(
       data.filter((trainer: Trainer) => !trainer.isSubscriber),
     )
   }, [data])
-
+  console.log(tournamentTrainerCards)
   const allCards = useMemo(
-    () => [...subscriberTrainerCards, ...simpleCards],
-    [simpleCards, subscriberTrainerCards],
+    () => isTournament ? [...tournamentTrainerCards] : [...subscriberTrainerCards, ...simpleCards],
+    [simpleCards, subscriberTrainerCards, tournamentTrainerCards, isTournament],
   )
+
   const [counter, oldCounter] = useTimedCyclicCounter(
     allCards.length,
     transitionTime ?? APP_CONFIG.timeStep,
