@@ -379,6 +379,7 @@
         "isSubscriber": false,
         "isActive": true,
         "isTournament": true,
+        "spriteUrl": "jaime.png",
         "team": [
             "Swampert",
             "Gengar",
@@ -467,6 +468,7 @@
         "isSubscriber": true,
         "isActive": true,
         "isTournament": true,
+        "spriteUrl":"razor.png",
         "team": [
             "Venusaur",
             "Machamp",
@@ -534,6 +536,7 @@
         "isSubscriber": false,
         "isActive": true,
         "isTournament": true,
+        "spriteUrl": "jhosep.png",
         "team": [
             "Volcarona",
             "Gliscor",

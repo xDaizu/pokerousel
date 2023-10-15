@@ -9,7 +9,7 @@ interface AppConfig {
 
 export const APP_CONFIG: AppConfig = Object.freeze({
   removeFairyType: true,
-  timeStep: 5000,
+  timeStep: 15000,
   maxPP: 6,
   maxCP: 6,
   maxHP: 4,
