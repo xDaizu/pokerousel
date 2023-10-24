@@ -1,7 +1,6 @@
 import type {ReactElement} from 'react'
 import type {Pokemon} from '../core/Pokemon'
 import type {Trainer} from '../core/Trainer'
-import {APP_CONFIG} from "../core/app-config";
 
 interface TournamentTrainerCardProps {
   data: Trainer
