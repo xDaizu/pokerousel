@@ -11,4 +11,5 @@ export interface Trainer {
   theme: string
   title: string
   affiliation: string
+  isTournament: boolean
 }
