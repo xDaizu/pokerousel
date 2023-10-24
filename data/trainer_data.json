@@ -569,6 +569,7 @@
         "isSubscriber": true,
         "isActive": true,
         "isTournament": true,
+        "spriteUrl":"geranio.png",
         "team": [
             "Golduck",
             "Medicham",
