@@ -39,7 +39,7 @@ export function Carousel({
       data.filter((trainer: Trainer) => !trainer.isSubscriber),
     )
   }, [data])
-  console.log(tournamentTrainerCards)
+  
   const allCards = useMemo(
     () => isTournament ? [...tournamentTrainerCards] : [...subscriberTrainerCards, ...simpleCards],
     [simpleCards, subscriberTrainerCards, tournamentTrainerCards, isTournament],
