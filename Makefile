@@ -14,3 +14,9 @@ deploy: build
 	git reset --soft HEAD~1
 	git rm -r --cached dist --quiet
 
+commit: build
+	git add .
+	git commit -m "update trainers"
+
+.PHONY: commit-and-deploy
+commit-and-deploy: commit deploy

@@ -1,582 +1,114 @@
 [
-    {
-        "name": "Lolocha",
-        "twitchAlias": "lolochaa",
-        "title": "Niña rata",
-        "theme": "pokemon roedor",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Cinccino",
-            "Emolga",
-            "Nidoqueen",
-            "Sandslash",
-            "Raichu",
-            "Nidoking"
-        ],
-        "spriteUrl": "lolochaa.png",
-        "stats": {
-            "pp": 8,
-            "cp": 6,
-            "hp": 3
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "DannyEven",
-        "twitchAlias": "dannyeven",
-        "title": "Boludo",
-        "theme": "pokemon esfericos",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Electrode",
-            "Mamoswine",
-            "Sigilyph",
-            "Forretress",
-            "Darmanitan",
-            "Poliwrath"
-        ],
-        "spriteUrl": "dannyEven.png",
-        "stats": {
-            "pp": 8,
-            "cp": 6,
-            "hp": 5
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Jedifriki",
-        "twitchAlias": "jedifriki",
-        "title": "Mando Padrazo",
-        "theme": "pokemon monos, peques y adorables",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Ralts",
-            "Elekid",
-            "Aron",
-            "Magby",
-            "Munchlax",
-            "Squirtle"
-        ],
-        "spriteUrl": "jedifriki.png",
-        "stats": {
-            "pp": 8,
-            "cp": 4,
-            "hp": 2
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Alimufking",
-        "twitchAlias": "alimufking",
-        "title": "Pirómano",
-        "theme": "pkmn de corazon ardiente",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Charmander",
-            "Litwick",
-            "Torchic",
-            "Camerupt"
-        ],
-        "spriteUrl": "alimufking.png",
-        "stats": {
-            "pp": 3,
-            "cp": 1,
-            "hp": 1
-        }
-    },
-    {
-        "name": "JosephBidenJr",
-        "title": "Arqueólogo",
-        "theme": "pokemon fósiles",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Aerodactyl"
-        ],
-        "spriteUrl": "joseph.png"
-    },
-    {
-        "name": "Juancito",
-        "title": "Verdemaniaco",
-        "titlePosition": "after",
-        "theme": "pokemon verdes",
-        "isSubscriber": false,
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Sceptile",
-            "Gallade",
-            "Flygon",
-            "Gardevoir",
-            "Gastrodon",
-            "Abomasnow"
-        ],
-        "spriteUrl": "juancito.png",
-        "stats": {
-            "pp": 5,
-            "cp": 3,
-            "hp": 2
-        },
-        "affiliation": "HDL"
-    },
-    {
-        "name": "NimyMP",
-        "title": "Amigo de los caninos",
-        "theme": "pokemon caninos",
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Arcanine",
-            "Granbull",
-            "Smeargle",
-            "Mightyena",
-            "Manectric",
-            "Stoutland"
-        ]
-    },
-    {
-        "name": "Nightdream",
-        "title": "Sombra andante",
-        "theme": "pokemon siniestros",
-        "isActive": true,
-        "isSubscriber": false,
-        "isTournament": true,
-        "team": [
-            "Zoroark",
-            "Hydreigon",
-            "Krookodile",
-            "Mandibuzz",
-            "Spiritomb",
-            "Umbreon"
-        ],
-        "affiliation": "HDL"
-    },
-    {
-        "name": "Manuchi",
-        "title": "Zampabollos",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "theme": "pokemon que te alimentan",
-        "team": [
-            "Miltank",
-            "Tropius",
-            "Octillery",
-            "Blissey",
-            "Vanilluxe",
-            "Amoonguss"
-        ],
-        "spriteUrl": "manuchi.png",
-        "stats": {
-            "pp": 8,
-            "cp": 6,
-            "hp": 5
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Andresito",
-        "title": "Apapachable",
-        "theme": "pokemon hadas gorditas rosas apapachables",
-        "isActive": false,
-        "team": [
-            "Happiny"
-        ]
-    },
-    {
-        "name": "Lobo",
-        "title": "Nakama",
-        "theme": "pokemon populares",
-        "isActive": false,
-        "team": [
-            "Charmander",
-            "Deino",
-            "Swablu"
-        ]
-    },
-    {
-        "name": "Rodra",
-        "title": "Chico edgy",
-        "theme": "pokemon populares",
-        "isActive": false,
-        "team": [
-            "Gastly"
-        ]
-    },
-    {
-        "name": "Rayzer",
-        "title": "Reptiliano",
-        "theme": "pokemon reptiles y anfibios",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl": "rayzer.png",
-        "team": [
-            "Poliwrath",
-            "Politoed",
-            "Dragonite",
-            "Milotic",
-            "Serperior",
-            "Archeops"
-        ],
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Felina Kyle",
-        "title": "Miauestra",
-        "theme": "pokemon feliformes",
-        "isSubscriber": true,
-        "isActive": true,
-        "team": [
-            "Espeon",
-            "Luxio",
-            "Liepard",
-            "Meowth",
-            "Zangoose",
-            "Skitty"
-        ],
-        "spriteUrl": "felinakyle.png",
-        "stats": {
-            "pp": 8,
-            "cp": 7,
-            "hp": 5
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Stormnvy",
-        "title": "El eeveegualable",
-        "theme": "eeveeluciones",
-        "isActive": true,
-        "isSubscriber": true,
-        "team": [
-            "Umbreon",
-            "Espeon",
-            "Leafeon",
-            "Jolteon",
-            "Vaporeon",
-            "Flareon"
-        ],
-        "spriteUrl": "stormnvy.png",
-        "stats": {
-            "pp": 7,
-            "cp": 5,
-            "hp": 4
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Tulka",
-        "title": "Spec-ops",
-        "theme": "pokemon usados militarmente",
-        "isSubscriber": true,
-        "isActive": true,
-        "team": [
-            "Beldum",
-            "Pawniard"
-        ],
-        "spriteUrl": "tulka.png"
-    },
-    {
-        "name": "LordDarksito",
-        "title": "Señor Oscurito",
-        "theme": "pokemon negros o de la oscuridad",
-        "isSubscriber": false,
-        "team": [
-            "Beldum",
-            "Pawniard"
-        ]
-    },
-    {
-        "name": "TioPepex",
-        "title": "Sonrisa colmillo",
-        "theme": "pkmn con sonrisa que enseñe el colmillo",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Aerodactyl"
-        ]
-    },
-    {
-        "name": "LordDragonss",
-        "title": "Protector de dragones",
-        "theme": "pokemon dragón",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Gible"
-        ]
-    },
-    {
-        "name": "Ash",
-        "title": "Fanático",
-        "theme": "pokemon que llevaba Ash",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Pikachu",
-            "Torterra",
-            "Lapras",
-            "Charizard",
-            "Snorlax",
-            "Lucario"
-        ],
-        "affiliation": "HDL",
-        "spriteUrl": "fanatico-ash.png"
-    },
-    {
-        "name": "Blue",
-        "title": "Fanático",
-        "theme": "pokemon que llevaba Blue",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Venusaur"
-        ],
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Joacoool",
-        "title": "Viajero de regiones",
-        "theme": "pokemon de Kanto",
-        "isSubscriber": false,
-        "team": [
-            "Pikachu"
-        ]
-    },
-    {
-        "name": "Rogelio",
-        "title": "Persona interesante",
-        "theme": "pokemon de tipo normal",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Furret"
-        ],
-        "affiliation": "HYL"
-    },
-    {
-        "name": "DroneRural",
-        "title": "Recluta",
-        "theme": "pokemon feos",
-        "isSubscriber": false,
-        "isActive": false,
-        "team": [
-            "Trubbish"
-        ]
-    },
-    {
-        "name": "XJaimeVGC",
-        "title": "Líder de la megaevolución",
-        "theme": "pokemon que podrían megaevolucionar",
-        "isSubscriber": false,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl": "jaime.png",
-        "team": [
-            "Swampert",
-            "Gengar",
-            "Gallade",
-            "Manectric",
-            "Scizor",
-            "Slowbro"
-        ],
-        "affiliation": "HDL"
-    },
-    {
-        "name": "Vancleemp",
-        "title": "Chef",
-        "theme": "restaurante pokemon",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl": "vancleemp.png",
-        "team": [
-            "Blaziken",
-            "Meowth",
-            "Alakazam",
-            "Dragonite",
-            "Azumarill",
-            "Weavile"
-        ],
-        "stats": {
-            "pp": 8,
-            "cp": 7,
-            "hp": 4
-        },
-        "affiliation": "HYL"
-    },
-    {
-        "name": "DoroxAPPLELY",
-        "title": "El tóxico",
-        "theme": "pokémon venenosos... y bronzor",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl": "dorox.png",
-        "team": [
-            "Bronzong",
-            "Amoonguss",
-            "Nidoking",
-            "Weezing",
-            "Skuntank",
-            "Tentacruel"
-        ],
-        "affiliation": "HYL"
-    },
-    {
-        "name": "Toxic_Doraemon",
-        "title": "Ninja",
-        "theme": "ninjas y cultura shogun",
-        "isSubscriber": true,
-        "isActive": true,
-        "team": [
-            "Slakoth"
-        ]
-    },
-    {
-        "name": "Cristy_Kamitsure",
-        "title": "Princesa de la Prestidigitación",
-        "theme": "pokemon sin patas",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Sigilyph",
-            "Seviper",
-            "Porygon-Z",
-            "Steelix",
-            "Kingdra"
-        ],
-        "stats": {
-            "pp": 3,
-            "cp": 3,
-            "hp": 3
-        },
-        "affiliation": "HDL"
-    },
-    {
-        "name": "ItsRazorMorel",
-        "title": "El fugaz",
-        "theme": "pokemon cuadrúpedos",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl":"razor.png",
-        "team": [
-            "Venusaur",
-            "Machamp",
-            "Crawdaunt",
-            "Altaria",
-            "Swampert",
-            "Typhlosion"
-        ],
-        "affiliation": "HYL"
-    },
-    {
-        "name": "MsKatty",
-        "title": "Iniciado",
-        "theme": "pokemon iniciales",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Mudkip"
-        ]
-    },
-    {
-        "name": "Kexior",
-        "title": "Corazon de acero",
-        "theme": "pokemon de acero",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Magnemite"
-        ]
-    },
-    {
-        "name": "Rool",
-        "title": "Piloto",
-        "theme": "pokemon ave",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Torchic"
-        ]
-    },
-    {
-        "name": "MarceRocket",
-        "title": "Errante",
-        "theme": "pokemon del team rocket",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Meowth"
-        ]
-    },
-    {
-        "name": "Ismayo",
-        "title": "DomaMonstruos",
-        "theme": "pokemon de huevo monstruo",
-        "isSubscriber": false,
-        "isActive": true,
-        "team": [
-            "Treecko"
-        ]
-    },
-    {
-        "name": "jhosepryt",
-        "title": "herrante",
-        "theme": "pokemon bicho",
-        "isSubscriber": false,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl": "jhosep.png",
-        "team": [
-            "Volcarona",
-            "Gliscor",
-            "Crustle",
-            "Scizor",
-            "Flygon",
-            "Galvantula"
-        ]
-    },
-    {
-        "name": "LillieSun",
-        "title": "La domadora",
-        "theme": "pokemon elegantes",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "team": [
-            "Mawile",
-            "Espeon",
-            "Milotic",
-            "Shaymin",
-            "Stoutland",
-            "Jellicent"
-        ]
-    },
-    {
-        "name": "Geranio",
-        "title": "spiquico",
-        "theme": "pokemon psíquicos",
-        "isSubscriber": true,
-        "isActive": true,
-        "isTournament": true,
-        "spriteUrl":"geranio.png",
-        "team": [
-            "Golduck",
-            "Medicham",
-            "Gothitelle",
-            "Metagross",
-            "Espeon",
-            "Xatu"
-        ]
+  {
+    "name": "Lolocha",
+    "title": "Entrenadora en las nubes",
+    "theme": "pokémon alados que vuelan por las nubes",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Swablu"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
     }
+  },
+  {
+    "name": "Muertexxy",
+    "title": "Cuernudo",
+    "theme": "pokemones que posean cuernos",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Metapod"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "SkyFleew",
+    "title": "entrenador bajito",
+    "theme": "pokemons bajitos o de estatura baja",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Porygon2"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Nighdream",
+    "title": "Turista",
+    "theme": "pokemon que sean del grupo huevo terreno",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "oshawott"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "JuancitoV",
+    "title": "Type confuse",
+    "theme": "Pokémon que parezcan de otro tipo",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "magikarp"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "VenumTheUWU",
+    "title": "esforzado",
+    "theme": "Pokémon de poco o difícil uso competitivo",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Rattata"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "XxPatrocloxX",
+    "title": "Botanico",
+    "theme": "Botanico",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Cottonee"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  }
 ]
