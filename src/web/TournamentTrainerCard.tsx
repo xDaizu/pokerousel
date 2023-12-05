@@ -11,9 +11,9 @@ const DEFAULT_TRAINER_IMAGE = 'blank.png'
 export function TournamentTrainerCard({data}: TournamentTrainerCardProps): ReactElement {
 
   const borderBgColor =
-        'bg-zinc-900';
+        'bg-zinc-200';
   const cardBgColor =
-        'bg-zinc-500';
+        'bg-zinc-700';
 
   const iconSrc = 'static/icons/JYL.png';
 
