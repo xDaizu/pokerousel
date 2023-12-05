@@ -126,5 +126,21 @@
       "cp": 0,
       "hp": 0
     }
+  },
+  {
+    "name": "MandoPadrazoJF",
+    "title": "Rockero",
+    "theme": "Banda de rock (Pokes que puedan tocar o cantar)",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Machop"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
   }
 ]
