@@ -9,21 +9,13 @@ interface TournamentTrainerCardProps {
 const DEFAULT_TRAINER_IMAGE = 'blank.png'
 
 export function TournamentTrainerCard({data}: TournamentTrainerCardProps): ReactElement {
-  const affiliation = data.affiliation ?? 'neutral';
 
   const borderBgColor =
-    affiliation === 'HYL' ? 'bg-amber-400' :
-      affiliation === 'HDL' ? 'bg-violet-400' :
         'bg-zinc-900';
   const cardBgColor =
-    affiliation === 'HYL' ? 'bg-sky-800' :
-      affiliation === 'HDL' ? 'bg-violet-900' :
         'bg-zinc-500';
 
-  const iconSrc =
-    affiliation === 'HYL' ? 'static/icons/HYL-loyal.png' :
-      affiliation === 'HDL' ? 'static/icons/HDL.png' :
-        'static/icons/HYL-neutral.png';
+  const iconSrc = 'static/icons/JYL.png';
 
   return (
     <div className={`${borderBgColor} max-h-60 h-60 flex p-1 max-w-xl flex-col justify-center`}>
