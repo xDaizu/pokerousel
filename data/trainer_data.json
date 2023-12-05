@@ -142,5 +142,37 @@
       "cp": 0,
       "hp": 0
     }
+  },
+  {
+    "name": "Manu",
+    "title": "Espeolólogo",
+    "theme": "pokémon cuevones",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Zubat"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "LordTiTo",
+    "title": "Explorador",
+    "theme": "Animales Salvajes",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Hippopotas"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
   }
 ]
