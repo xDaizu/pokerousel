@@ -55,7 +55,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "oshawott"
+      "Oshawott"
     ],
     "stats": {
       "pp": 0,
@@ -71,7 +71,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "magikarp"
+      "Magikarp"
     ],
     "stats": {
       "pp": 0,
@@ -104,6 +104,22 @@
     "isTournament": true,
     "team": [
       "Cottonee"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "AlexJazz",
+    "title": "Pesado",
+    "theme": "Pokemon cuyo peso sea igual o superior a los 100kg",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Larvitar"
     ],
     "stats": {
       "pp": 0,
