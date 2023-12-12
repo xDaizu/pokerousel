@@ -222,5 +222,85 @@
       "cp": 0,
       "hp": 0
     }
+  },
+  {
+    "name": "DannyEven",
+    "title": "Huevon",
+    "theme": "pokemon huevones",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Exeggcute"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Vancleemp",
+    "title": "cocinero",
+    "theme": "pokemon tipo fuego mas 1 extra",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Torchic"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Jhoseprytz",
+    "title": "ambiente lluvioso",
+    "theme": "pokemons relacionados al ambiente lluvioso",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Snivy"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Salvp",
+    "title": "Marinero Salvador",
+    "theme": "Pokemones de tipo agua",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Horsea"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Zanguss",
+    "title": "Ladrón",
+    "theme": "Pokémon que aprenda Ladron/Robo",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Zangoose"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
   }
 ]
