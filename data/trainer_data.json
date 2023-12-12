@@ -1,21 +1,5 @@
 [
   {
-    "name": "Lolocha",
-    "title": "Entrenadora en las nubes",
-    "theme": "pokémon alados para volar por las nubes",
-    "isSubscriber": true,
-    "isActive": true,
-    "isTournament": true,
-    "team": [
-      "Swablu"
-    ],
-    "stats": {
-      "pp": 0,
-      "cp": 0,
-      "hp": 0
-    }
-  },
-  {
     "name": "Muertexxy",
     "title": "Cuernudo",
     "theme": "pokemones que posean cuernos",
@@ -192,6 +176,22 @@
     }
   },
   {
+    "name": "Lolocha",
+    "title": "Entrenadora en las nubes",
+    "theme": "pokémon alados para volar por las nubes",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Swablu"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
     "name": "Geranio",
     "title": "entrenador oscuro amarillo",
     "theme": "son pokes negros oscuro y amarillo",
@@ -296,6 +296,54 @@
     "isTournament": true,
     "team": [
       "Zangoose"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Ryyukix",
+    "title": "luchador marcial",
+    "theme": "gym bros",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Tyrogue"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Donetobasureto",
+    "title": "Basurero",
+    "theme": "mientras más feo más me gusta",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Trubbish"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "NormaDitto",
+    "title": "Tipo Normal",
+    "theme": "Usar pokemones de tipo Normal",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Ditto"
     ],
     "stats": {
       "pp": 0,
