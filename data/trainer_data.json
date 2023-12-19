@@ -208,22 +208,6 @@
     }
   },
   {
-    "name": "ItsRazorMorel",
-    "title": "Ambientador",
-    "theme": "Pokemones monstruosos u de aspecto colosal",
-    "isSubscriber": true,
-    "isActive": true,
-    "isTournament": true,
-    "team": [
-      "Bulbasaur"
-    ],
-    "stats": {
-      "pp": 0,
-      "cp": 0,
-      "hp": 0
-    }
-  },
-  {
     "name": "DannyEven",
     "title": "Huevon",
     "theme": "pokemon huevones",
@@ -344,6 +328,22 @@
     "isTournament": true,
     "team": [
       "Ditto"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "ItsRazorMorel",
+    "title": "Descomunal",
+    "theme": "Pokemon colosales y monstruosos",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Bulbasaur"
     ],
     "stats": {
       "pp": 0,
