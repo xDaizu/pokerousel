@@ -350,5 +350,21 @@
       "cp": 0,
       "hp": 0
     }
+  },
+  {
+    "name": "Darckat",
+    "title": "empresario",
+    "theme": "mis pokemones los elijen streamers y yo",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Wailord"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
   }
 ]
