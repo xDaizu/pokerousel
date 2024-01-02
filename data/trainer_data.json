@@ -1,20 +1,4 @@
-[  {
-    "name": "Lolocha",
-    "title": "Entrenadora en las nubes",
-    "theme": "pokémon alados para volar por las nubes",
-    "isSubscriber": true,
-    "isActive": true,
-    "isTournament": true,
-    "team": [
-      "swablu",
-      "honchkrow"
-    ],
-    "stats": {
-      "pp": 0,
-      "cp": 0,
-      "hp": 0
-    }
-  },
+[
   {
     "name": "Muertexxy",
     "title": "Cuernudo",
@@ -23,12 +7,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "metapod",
-      "absol",
-      "milotic",
-      "dratini",
-      "nidoking",
-      "cinccino"
+      "Metapod",
+      "Absol",
+      "Milotic",
+      "Dratini",
+      "Nidoking",
+      "Cinccino"
     ],
     "stats": {
       "pp": 0,
@@ -45,10 +29,10 @@
     "isTournament": true,
     "team": [
       "Porygon2",
-      "azumarill",
+      "Azumarill",
       "Rotom",
-      "drilbur",
-      "whimsicott",
+      "Drilbur",
+      "Whimsicott",
       "Litwick"
     ],
     "stats": {
@@ -65,12 +49,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "dewott",
-      "lucario",
-      "espeon",
-      "swinub",
-      "quilava",
-      "servine"
+      "Dewott",
+      "Lucario",
+      "Espeon",
+      "Swinub",
+      "Quilava",
+      "Servine"
     ],
     "stats": {
       "pp": 0,
@@ -86,12 +70,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "gyarados",
-      "sudowoodo",
-      "seviper",
-      "charmeleon",
+      "Gyarados",
+      "Sudowoodo",
+      "Seviper",
+      "Charmeleon",
       "Luxio",
-      "anorith"
+      "Anorith"
     ],
     "stats": {
       "pp": 0,
@@ -107,12 +91,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "rattata",
-      "raticate",
-      "finneon",
-      "ledian",
-      "duskull",
-      "unown"
+      "Rattata",
+      "Raticate",
+      "Finneon",
+      "Ledian",
+      "Duskull",
+      "Unown"
     ],
     "stats": {
       "pp": 0,
@@ -145,10 +129,10 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "larvitar",
-      "scizor",
-      "cloyster",
-      "spiritomb"
+      "Larvitar",
+      "Scizor",
+      "Cloyster",
+      "Spiritomb"
     ],
     "stats": {
       "pp": 0,
@@ -164,7 +148,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "machop"
+      "Machop"
     ],
     "stats": {
       "pp": 0,
@@ -180,12 +164,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "zubat",
-      "whismur",
-      "zubat",
-      "dunsparce",
-      "zubat",
-      "crobat"
+      "Zubat",
+      "Whismur",
+      "Zubat",
+      "Dunsparce",
+      "Zubat",
+      "Crobat"
     ],
     "stats": {
       "pp": 0,
@@ -201,12 +185,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "hippopotas",
-      "ekans",
-      "vullaby",
-      "blitzle",
-      "rhyhorn",
-      "girafarig"
+      "Hippopotas",
+      "Ekans",
+      "Vullaby",
+      "Blitzle",
+      "Rhyhorn",
+      "Girafarig"
     ],
     "stats": {
       "pp": 0,
@@ -232,6 +216,23 @@
     }
   },
   {
+    "name": "Lolocha",
+    "title": "Entrenadora en las nubes",
+    "theme": "pokémon alados para volar por las nubes",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Swablu",
+      "Honchkrow"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
     "name": "Geranio",
     "title": "entrenador oscuro amarillo",
     "theme": "son pokes negros oscuro y amarillo",
@@ -239,12 +240,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "pikachu",
-      "shieldon",
-      "combee",
-      "cinccino",
-      "emolga",
-      "eevee"
+      "Pikachu",
+      "Shieldon",
+      "Combee",
+      "Cinccino",
+      "Emolga",
+      "Eevee"
     ],
     "stats": {
       "pp": 0,
@@ -260,8 +261,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "exeggcute",
-      "solrock"
+      "Exeggcute",
+      "Solrock"
     ],
     "stats": {
       "pp": 0,
@@ -277,12 +278,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "combusken",
-      "rotom",
-      "arcanine",
-      "jolteon",
-      "litwick",
-      "numel"
+      "Combusken",
+      "Rotom",
+      "Arcanine",
+      "Jolteon",
+      "Litwick",
+      "Numel"
     ],
     "stats": {
       "pp": 0,
@@ -298,9 +299,9 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "snivy",
-      "shellder",
-      "gyarados"
+      "Snivy",
+      "Shellder",
+      "Gyarados"
     ],
     "stats": {
       "pp": 0,
@@ -318,10 +319,10 @@
     "team": [
       "Horsea",
       "Marshtomp",
-      "Chinchou",
       "Ducklett",
-      "Poliwag",
-      "Magikarp"
+      "Lanturn",
+      "Poliwrath",
+      "Gyarados"
     ],
     "stats": {
       "pp": 0,
@@ -358,12 +359,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "hitmonlee",
-      "machop",
-      "timburr",
-      "krabby",
-      "geodude",
-      "mankey"
+      "Hitmonlee",
+      "Machop",
+      "Timburr",
+      "Krabby",
+      "Geodude",
+      "Mankey"
     ],
     "stats": {
       "pp": 0,
@@ -411,7 +412,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "bulbasaur"
+      "Bulbasaur"
     ],
     "stats": {
       "pp": 0,
@@ -427,12 +428,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "wailord",
-      "charizard",
-      "starmie",
-      "chandelure",
-      "minccino",
-      "magnezone"
+      "Wailord",
+      "Charizard",
+      "Starmie",
+      "Chandelure",
+      "Minccino",
+      "Magnezone"
     ],
     "stats": {
       "pp": 0,
