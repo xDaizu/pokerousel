@@ -1,5 +1,4 @@
-[
-  {
+[  {
     "name": "Lolocha",
     "title": "Entrenadora en las nubes",
     "theme": "pokémon alados para volar por las nubes",
@@ -7,7 +6,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Swablu"
+      "swablu",
+      "honchkrow"
     ],
     "stats": {
       "pp": 0,
@@ -23,7 +23,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Metapod"
+      "metapod",
+      "absol",
+      "milotic",
+      "dratini",
+      "nidoking",
+      "cinccino"
     ],
     "stats": {
       "pp": 0,
@@ -39,7 +44,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Porygon2"
+      "Porygon2",
+      "azumarill",
+      "Rotom",
+      "drilbur",
+      "whimsicott",
+      "Litwick"
     ],
     "stats": {
       "pp": 0,
@@ -55,7 +65,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Oshawott"
+      "dewott",
+      "lucario",
+      "espeon",
+      "swinub",
+      "quilava",
+      "servine"
     ],
     "stats": {
       "pp": 0,
@@ -71,7 +86,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Magikarp"
+      "gyarados",
+      "sudowoodo",
+      "seviper",
+      "charmeleon",
+      "Luxio",
+      "anorith"
     ],
     "stats": {
       "pp": 0,
@@ -87,7 +107,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Rattata"
+      "rattata",
+      "raticate",
+      "finneon",
+      "ledian",
+      "duskull",
+      "unown"
     ],
     "stats": {
       "pp": 0,
@@ -103,7 +128,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Cottonee"
+      "Whimsicott",
+      "Roserade"
     ],
     "stats": {
       "pp": 0,
@@ -119,7 +145,10 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Larvitar"
+      "larvitar",
+      "scizor",
+      "cloyster",
+      "spiritomb"
     ],
     "stats": {
       "pp": 0,
@@ -135,7 +164,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Machop"
+      "machop"
     ],
     "stats": {
       "pp": 0,
@@ -151,7 +180,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Zubat"
+      "zubat",
+      "whismur",
+      "zubat",
+      "dunsparce",
+      "zubat",
+      "crobat"
     ],
     "stats": {
       "pp": 0,
@@ -167,7 +201,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Hippopotas"
+      "hippopotas",
+      "ekans",
+      "vullaby",
+      "blitzle",
+      "rhyhorn",
+      "girafarig"
     ],
     "stats": {
       "pp": 0,
@@ -183,7 +222,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Mareep"
+      "Mareep",
+      "Combusken"
     ],
     "stats": {
       "pp": 0,
@@ -199,7 +239,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Pichu"
+      "pikachu",
+      "shieldon",
+      "combee",
+      "cinccino",
+      "emolga",
+      "eevee"
     ],
     "stats": {
       "pp": 0,
@@ -215,7 +260,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Exeggcute"
+      "exeggcute",
+      "solrock"
     ],
     "stats": {
       "pp": 0,
@@ -231,7 +277,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Torchic"
+      "combusken",
+      "rotom",
+      "arcanine",
+      "jolteon",
+      "litwick",
+      "numel"
     ],
     "stats": {
       "pp": 0,
@@ -247,7 +298,9 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Snivy"
+      "snivy",
+      "shellder",
+      "gyarados"
     ],
     "stats": {
       "pp": 0,
@@ -263,7 +316,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Horsea"
+      "Horsea",
+      "Marshtomp",
+      "Chinchou",
+      "Ducklett",
+      "Poliwag",
+      "Magikarp"
     ],
     "stats": {
       "pp": 0,
@@ -279,7 +337,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Zangoose"
+      "Zangoose",
+      "Sableye",
+      "Conkeldurr",
+      "Nidoqueen",
+      "Espeon",
+      "Scizor"
     ],
     "stats": {
       "pp": 0,
@@ -295,7 +358,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Tyrogue"
+      "hitmonlee",
+      "machop",
+      "timburr",
+      "krabby",
+      "geodude",
+      "mankey"
     ],
     "stats": {
       "pp": 0,
@@ -343,7 +411,7 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Bulbasaur"
+      "bulbasaur"
     ],
     "stats": {
       "pp": 0,
@@ -359,7 +427,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Wailord"
+      "wailord",
+      "charizard",
+      "starmie",
+      "chandelure",
+      "minccino",
+      "magnezone"
     ],
     "stats": {
       "pp": 0,
