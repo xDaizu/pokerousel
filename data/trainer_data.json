@@ -1,5 +1,22 @@
 [
   {
+    "name": "Lolocha",
+    "title": "Entrenadora en las nubes",
+    "theme": "pokémon alados para volar por las nubes",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Swablu",
+      "Honchkrow"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
     "name": "Muertexxy",
     "title": "Cuernudo",
     "theme": "pokemones que posean cuernos",
@@ -29,11 +46,7 @@
     "isTournament": true,
     "team": [
       "Porygon2",
-      "Azumarill",
-      "Rotom",
-      "Drilbur",
-      "Whimsicott",
-      "Litwick"
+      "Rotom"
     ],
     "stats": {
       "pp": 0,
@@ -92,11 +105,11 @@
     "isTournament": true,
     "team": [
       "Rattata",
-      "Raticate",
-      "Finneon",
-      "Ledian",
+      "Lumineon",
       "Duskull",
-      "Unown"
+      "Pidgeotto",
+      "Unown",
+      "Girafarig"
     ],
     "stats": {
       "pp": 0,
@@ -165,7 +178,7 @@
     "isTournament": true,
     "team": [
       "Zubat",
-      "Whismur",
+      "Loudred",
       "Zubat",
       "Dunsparce",
       "Zubat",
@@ -216,23 +229,6 @@
     }
   },
   {
-    "name": "Lolocha",
-    "title": "Entrenadora en las nubes",
-    "theme": "pokémon alados para volar por las nubes",
-    "isSubscriber": true,
-    "isActive": true,
-    "isTournament": true,
-    "team": [
-      "Swablu",
-      "Honchkrow"
-    ],
-    "stats": {
-      "pp": 0,
-      "cp": 0,
-      "hp": 0
-    }
-  },
-  {
     "name": "Geranio",
     "title": "entrenador oscuro amarillo",
     "theme": "son pokes negros oscuro y amarillo",
@@ -241,11 +237,11 @@
     "isTournament": true,
     "team": [
       "Pikachu",
-      "Shieldon",
-      "Combee",
+      "Luxio",
+      "Rufflet",
       "Cinccino",
-      "Emolga",
-      "Eevee"
+      "Mawile",
+      "Flaaffy"
     ],
     "stats": {
       "pp": 0,
@@ -262,6 +258,10 @@
     "isTournament": true,
     "team": [
       "Exeggcute",
+      "Snorlax",
+      "Togepi",
+      "Solosis",
+      "Chansey",
       "Solrock"
     ],
     "stats": {
@@ -412,7 +412,9 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Bulbasaur"
+      "Ivysaur",
+      "Cloyster",
+      "Houndoom"
     ],
     "stats": {
       "pp": 0,
