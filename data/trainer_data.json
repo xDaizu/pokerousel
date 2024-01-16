@@ -8,7 +8,10 @@
     "isTournament": true,
     "team": [
       "Swablu",
-      "Honchkrow"
+      "Honchkrow",
+      "Ducklett",
+      "Skarmory",
+      "Scyther"
     ],
     "stats": {
       "pp": 0,
@@ -25,11 +28,11 @@
     "isTournament": true,
     "team": [
       "Metapod",
+      "Dragonair",
       "Absol",
+      "Cinccino",
       "Milotic",
-      "Dratini",
-      "Nidoking",
-      "Cinccino"
+      "Nidoking"
     ],
     "stats": {
       "pp": 0,
@@ -62,12 +65,11 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Dewott",
-      "Lucario",
+      "Samurott",
+      "Typhlosion",
+      "Serperior",
       "Espeon",
-      "Swinub",
-      "Quilava",
-      "Servine"
+      "Mamoswine"
     ],
     "stats": {
       "pp": 0,
@@ -85,10 +87,10 @@
     "team": [
       "Gyarados",
       "Sudowoodo",
+      "Anorith",
       "Seviper",
-      "Charmeleon",
-      "Luxio",
-      "Anorith"
+      "Luxray",
+      "Charizard"
     ],
     "stats": {
       "pp": 0,
@@ -104,12 +106,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Rattata",
+      "Raticate",
       "Lumineon",
-      "Duskull",
       "Pidgeotto",
-      "Unown",
-      "Girafarig"
+      "Duskull",
+      "Bronzor",
+      "Unown"
     ],
     "stats": {
       "pp": 0,
@@ -142,10 +144,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Larvitar",
-      "Scizor",
+      "Pupitar",
+      "Steelix",
       "Cloyster",
-      "Spiritomb"
+      "Spiritomb",
+      "Scizor",
+      "Shelgon"
     ],
     "stats": {
       "pp": 0,
@@ -259,10 +263,10 @@
     "team": [
       "Exeggcute",
       "Snorlax",
-      "Togepi",
-      "Solosis",
       "Chansey",
-      "Solrock"
+      "Solrock",
+      "Azumarill",
+      "Wooper"
     ],
     "stats": {
       "pp": 0,
@@ -436,6 +440,22 @@
       "Chandelure",
       "Minccino",
       "Magnezone"
+    ],
+    "stats": {
+      "pp": 0,
+      "cp": 0,
+      "hp": 0
+    }
+  },
+  {
+    "name": "Chulicapo",
+    "title": "electrizante",
+    "theme": "pokemon tipo electrico",
+    "isSubscriber": true,
+    "isActive": true,
+    "isTournament": true,
+    "team": [
+      "Elekid"
     ],
     "stats": {
       "pp": 0,
