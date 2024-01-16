@@ -321,12 +321,12 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Horsea",
-      "Marshtomp",
-      "Ducklett",
+      "Seadra",
+      "Seismitoad",
+      "Pelipper",
+      "Gyarados",
       "Lanturn",
-      "Poliwrath",
-      "Gyarados"
+      "Poliwrath"
     ],
     "stats": {
       "pp": 0,
@@ -455,7 +455,8 @@
     "isActive": true,
     "isTournament": true,
     "team": [
-      "Elekid"
+      "Elekid",
+      "Flaaffy"
     ],
     "stats": {
       "pp": 0,
