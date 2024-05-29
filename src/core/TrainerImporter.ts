@@ -1,4 +1,3 @@
-// import data from '../../data/trainer_data.json'
 import { findByName } from './Pokedex'
 import type { Pokemon } from './Pokemon'
 import type { Trainer } from './Trainer'
