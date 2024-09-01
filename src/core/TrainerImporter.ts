@@ -1,8 +1,7 @@
-import data from '../../data/trainer_data.json'
 import { findByName } from './Pokedex'
 import type { Pokemon } from './Pokemon'
 import type { Trainer } from './Trainer'
-import {Stats} from "./Stats";
+import { Stats } from "./Stats";
 
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
@@ -19,11 +18,21 @@ type TrainerJson = {
 }
 
 export function importTrainers(): Trainer[] {
-  const trainerData = data as unknown as TrainerListJson
+  const request = new XMLHttpRequest();
+  request.open("GET", "http://34.139.8.59:8080/pokerousel", false); // `false` makes the request synchronous
+  request.send(null);
 
-  const trainers = trainerData.map(importTrainer)
+  if (request.status === 200) {
+    console.log(request.responseText);
+    const data = JSON.parse(request.responseText);
 
-  return trainers
+    const trainerData = data as unknown as TrainerListJson
+
+    const trainers = trainerData.map(importTrainer)
+
+    return trainers
+  }
+  return [];
 }
 
 function importTrainer(trainerJson: TrainerJson): Trainer {
@@ -48,3 +57,4 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
 function importPokemon(pokemonName: string): Pokemon {
   return findByName(pokemonName)
 }
+
