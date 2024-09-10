@@ -6,7 +6,7 @@ interface TournamentTrainerCardProps {
   data: Trainer
 }
 
-const DEFAULT_TRAINER_IMAGE = 'blank.png'
+const DEFAULT_TRAINER_IMAGE = 'static/trainer/blank.png'
 
 export function TournamentTrainerCard({data}: TournamentTrainerCardProps): ReactElement {
 
@@ -23,7 +23,7 @@ export function TournamentTrainerCard({data}: TournamentTrainerCardProps): React
         <div className="w-36 flex justify-items-center overflow-hidden no-flex">
           <img
             className="h-full max-h-full object-cover"
-            src={`static/trainer/${data.spriteUrl ?? DEFAULT_TRAINER_IMAGE}`}
+            src={`${data.spriteUrl ?? DEFAULT_TRAINER_IMAGE}`}
             alt=""
           />
         </div>
