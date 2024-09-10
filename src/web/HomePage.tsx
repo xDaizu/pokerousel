@@ -25,6 +25,7 @@ export function HomePage(): ReactElement {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      console.log(`The list of trainers will be updated ever ${refreshTime} ms`)
       refreshTrainers();
       setRefreshTime(APP_CONFIG.timeStep*(allTrainers.length+1));
     }, refreshTime);
