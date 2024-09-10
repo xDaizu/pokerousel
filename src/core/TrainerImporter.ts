@@ -19,7 +19,7 @@ type TrainerJson = {
 
 export function importTrainers(): Trainer[] {
   const request = new XMLHttpRequest();
-  request.open("GET", "http://34.139.8.59:8080/pokerousel", false); // `false` makes the request synchronous
+  request.open("GET", "https://cors-anywhere.herokuapp.com/34.139.8.59:8080/pokerousel", false); // `false` makes the request synchronous
   request.send(null);
 
   if (request.status === 200) {
