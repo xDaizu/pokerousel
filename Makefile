@@ -20,3 +20,4 @@ commit: build
 
 .PHONY: commit-and-deploy
 commit-and-deploy: commit deploy
+
