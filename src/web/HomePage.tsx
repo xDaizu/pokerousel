@@ -6,8 +6,16 @@ import type {Trainer} from '../core/Trainer'
 import {importTrainers} from '../core/TrainerImporter'
 import {Carousel} from './Carousel'
 import Footer from './Footer'
+import { APP_CONFIG } from '../core/app-config'
 
-const allTrainers = importTrainers()
+let allTrainers:Trainer[] = [];
+let counter = 2;
+const refreshTrainers: Function = ()=> {
+  console.log('refreshing number ', counter);
+  allTrainers = importTrainers().slice(1,counter);
+  counter++;
+}
+refreshTrainers();
 
 export function HomePage(): ReactElement {
   const {t} = useTranslation()
@@ -16,14 +24,25 @@ export function HomePage(): ReactElement {
   const [trainerFilter, setTrainerFilter] = useState<string | undefined>(
     undefined,
   )
+  const [refreshTime, setRefreshTime] = useState(APP_CONFIG.timeStep*(allTrainers.length+1));
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      refreshTrainers();
+      console.log("We have trainers: ", allTrainers.length)
+      console.log(`Logs every ${refreshTime} ms`, Date.now());
+      setRefreshTime(APP_CONFIG.timeStep*(allTrainers.length+1));
+    }, refreshTime);
+  
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, [])
   const trainerList = useMemo(() => {
     return allTrainers.filter(
       (trainer: Trainer) =>
         trainerFilter == undefined ||
         trainer.name.toLowerCase() === trainerFilter.toLowerCase(),
     ).filter((trainer: Trainer) => trainer.isActive)
-  }, [trainerFilter])
+  }, [trainerFilter, allTrainers])
 
   useEffect(() => {
     const isCleanSet = searchParams.has('clean')
