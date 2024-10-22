@@ -22,7 +22,7 @@ export function importTrainers(): Trainer[] {
  
   request.open("GET", "https://proxy.cors.sh/http://34.139.8.59:8080/pokerousel", false); // `false` makes the request synchronous
   request.setRequestHeader(
-    'x-cors-api-key', 'temp_cc56c4bd90cea822782306df0128caff'
+    'x-cors-api-key', 'temp_c3cdb6a8e6eff964bc53f606a5b3a1dc'
     );
   request.send(null);
 
