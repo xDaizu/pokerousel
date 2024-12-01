@@ -19,11 +19,8 @@ type TrainerJson = {
 
 export function importTrainers(): Trainer[] {
   const request = new XMLHttpRequest();
- 
-  request.open("GET", "https://proxy.cors.sh/http://34.139.8.59:8080/pokerousel", false); // `false` makes the request synchronous
-  request.setRequestHeader(
-    'x-cors-api-key', 'temp_c3cdb6a8e6eff964bc53f606a5b3a1dc'
-    );
+
+  request.open("GET", "https://pokeprofessor.xyz/pokerousel", false); // `false` makes the request synchronous
   request.send(null);
 
   if (request.status === 200) {
