@@ -7,6 +7,7 @@ import { TrainerCard } from './TrainerCard'
 import { TournamentTrainerCard } from './TournamentTrainerCard'
 import { TrainerSimplifiedCard } from './TrainerSimplifiedCard'
 import { useTimedCyclicCounter } from './useTimedCyclicCounter'
+import { TrainerBadgesCard } from './TrainerBadgesCard'
 
 interface TrainerCardListProps {
   data: Trainer[]
@@ -29,8 +30,9 @@ export function Carousel({
   const tournamentTrainerCards = useMemo(() => {
     return data
       .filter((trainer: Trainer) => trainer.isTournament)
-      .map((trainer: Trainer) => (
-        <TournamentTrainerCard data={trainer} key={trainer.name} />
+      .flatMap((trainer: Trainer) => (
+        [<TournamentTrainerCard data={trainer} key={trainer.name} />,
+        <TrainerBadgesCard data={trainer} key={trainer.name} />]
       ))
   }, [data])
 

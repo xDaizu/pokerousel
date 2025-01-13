@@ -1,3 +1,4 @@
+import { BadgeChallenge } from './BadgeChallenge'
 import type { Pokemon } from './Pokemon'
 import type { Stats } from './Stats'
 
@@ -12,4 +13,5 @@ export interface Trainer {
   title: string
   affiliation: string
   isTournament: boolean
+  badges: BadgeChallenge[]
 }

@@ -2,6 +2,8 @@ import { findByName } from './Pokedex'
 import type { Pokemon } from './Pokemon'
 import type { Trainer } from './Trainer'
 import { Stats } from "./Stats";
+import { BadgeChallenge } from './BadgeChallenge';
+import { Badge, getBadgesFromKanto } from './Badge';
 
 type TrainerListJson = TrainerJson[]
 type TrainerJson = {
@@ -15,6 +17,14 @@ type TrainerJson = {
   stats?: Stats
   affiliation?: string
   isTournament?: boolean
+  challenges: ChallengeJson[]
+}
+
+type ChallengeJson = {
+  type: string
+  shortname: string
+  obtained: boolean
+  level: number
 }
 
 export function importTrainers(): Trainer[] {
@@ -37,7 +47,7 @@ export function importTrainers(): Trainer[] {
 }
 
 function importTrainer(trainerJson: TrainerJson): Trainer {
-  return {
+  return <Trainer>{
     name: trainerJson.name,
     isSubscriber: trainerJson.isSubscriber ?? false,
     spriteUrl: trainerJson.spriteUrl,
@@ -51,11 +61,31 @@ function importTrainer(trainerJson: TrainerJson): Trainer {
       cp: trainerJson?.stats?.cp,
     },
     affiliation: trainerJson.affiliation ?? 'HYL',
-    isTournament: trainerJson.isTournament ?? false
+    isTournament: trainerJson.isTournament ?? false,
+    badges: importChallenge(trainerJson.challenges??[]),
   }
 }
 
 function importPokemon(pokemonName: string): Pokemon {
   return findByName(pokemonName)
+}
+
+function importChallenge(challenges: ChallengeJson[]): BadgeChallenge[] {
+  return getBadgesFromKanto().map((badge: Badge) => {
+    const jsonBadgeChallenge = challenges.find((c: any) => c.type === 'badge' && c.shortname === badge.shortname)
+
+    if (badge.shortname === 'cascade' || badge.shortname === 'boulder'|| badge.shortname === 'thunder') {
+      return <BadgeChallenge>{
+        badge: badge,
+        obtained: true,
+        level: badge.shortname === 'cascade' ? 3 : 1,
+      }
+    }
+    return <BadgeChallenge>{
+      badge: badge,
+      obtained: jsonBadgeChallenge?.obtained ?? false,
+      level: 1,
+    }  
+  })
 }
 
